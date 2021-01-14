@@ -3,110 +3,126 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4006E22A25AD0D06000306A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006E22925AD0D06000306A8 /* AppDelegate.swift */; };
-		4006E22C25AD0D06000306A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4006E22B25AD0D06000306A8 /* ContentView.swift */; };
-		4006E22E25AD0D06000306A8 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 4006E22D25AD0D06000306A8 /* Experience.rcproject */; };
-		4006E23025AD0D07000306A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4006E22F25AD0D07000306A8 /* Assets.xcassets */; };
-		4006E23325AD0D07000306A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4006E23225AD0D07000306A8 /* Preview Assets.xcassets */; };
+		4A4B691525AEF7EE00123F05 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B691425AEF7EE00123F05 /* Model.swift */; };
+		4A4B691925AEFEF500123F05 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 4A4B691825AEFEF500123F05 /* FocusEntity */; };
+		4A66E8B425ACFDA4004972FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A66E8B325ACFDA4004972FF /* AppDelegate.swift */; };
+		4A66E8B625ACFDA5004972FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A66E8B525ACFDA5004972FF /* ContentView.swift */; };
+		4A66E8BA25ACFDA8004972FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A66E8B925ACFDA8004972FF /* Assets.xcassets */; };
+		4A66E8BD25ACFDA8004972FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A66E8BC25ACFDA8004972FF /* Preview Assets.xcassets */; };
+		4ACA86BB25AFCC0C007ADEEF /* Apple.usdc in Resources */ = {isa = PBXBuildFile; fileRef = 4ACA86BA25AFCC0C007ADEEF /* Apple.usdc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4006E22625AD0D06000306A8 /* SpeakAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4006E22925AD0D06000306A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4006E22B25AD0D06000306A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4006E22D25AD0D06000306A8 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
-		4006E22F25AD0D07000306A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4006E23225AD0D07000306A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		4006E23425AD0D07000306A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A4B691425AEF7EE00123F05 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		4A66E8B025ACFDA4004972FF /* SpeakAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A66E8B325ACFDA4004972FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A66E8B525ACFDA5004972FF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4A66E8B925ACFDA8004972FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A66E8BC25ACFDA8004972FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4A66E8BE25ACFDA8004972FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ACA86BA25AFCC0C007ADEEF /* Apple.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Apple.usdc; path = ../../../Apple.usdc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4006E22325AD0D06000306A8 /* Frameworks */ = {
+		4A66E8AD25ACFDA4004972FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4B691925AEFEF500123F05 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4006E21D25AD0D06000306A8 = {
+		4A66E8A725ACFDA4004972FF = {
 			isa = PBXGroup;
 			children = (
-				4006E22825AD0D06000306A8 /* SpeakAR */,
-				4006E22725AD0D06000306A8 /* Products */,
+				4A66E8B225ACFDA4004972FF /* speakAR */,
+				4A66E8B125ACFDA4004972FF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4006E22725AD0D06000306A8 /* Products */ = {
+		4A66E8B125ACFDA4004972FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4006E22625AD0D06000306A8 /* SpeakAR.app */,
+				4A66E8B025ACFDA4004972FF /* SpeakAR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4006E22825AD0D06000306A8 /* SpeakAR */ = {
+		4A66E8B225ACFDA4004972FF /* speakAR */ = {
 			isa = PBXGroup;
 			children = (
-				4006E22925AD0D06000306A8 /* AppDelegate.swift */,
-				4006E22B25AD0D06000306A8 /* ContentView.swift */,
-				4006E22D25AD0D06000306A8 /* Experience.rcproject */,
-				4006E22F25AD0D07000306A8 /* Assets.xcassets */,
-				4006E23425AD0D07000306A8 /* Info.plist */,
-				4006E23125AD0D07000306A8 /* Preview Content */,
+				4A66E8B325ACFDA4004972FF /* AppDelegate.swift */,
+				4A66E8B525ACFDA5004972FF /* ContentView.swift */,
+				4A4B691425AEF7EE00123F05 /* Model.swift */,
+				4A66E8C725AD06B4004972FF /* Models */,
+				4A66E8B925ACFDA8004972FF /* Assets.xcassets */,
+				4A66E8BE25ACFDA8004972FF /* Info.plist */,
+				4A66E8BB25ACFDA8004972FF /* Preview Content */,
 			);
-			path = SpeakAR;
+			path = speakAR;
 			sourceTree = "<group>";
 		};
-		4006E23125AD0D07000306A8 /* Preview Content */ = {
+		4A66E8BB25ACFDA8004972FF /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				4006E23225AD0D07000306A8 /* Preview Assets.xcassets */,
+				4A66E8BC25ACFDA8004972FF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4A66E8C725AD06B4004972FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4ACA86BA25AFCC0C007ADEEF /* Apple.usdc */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4006E22525AD0D06000306A8 /* SpeakAR */ = {
+		4A66E8AF25ACFDA4004972FF /* SpeakAR */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4006E23725AD0D07000306A8 /* Build configuration list for PBXNativeTarget "SpeakAR" */;
+			buildConfigurationList = 4A66E8C125ACFDA8004972FF /* Build configuration list for PBXNativeTarget "SpeakAR" */;
 			buildPhases = (
-				4006E22225AD0D06000306A8 /* Sources */,
-				4006E22325AD0D06000306A8 /* Frameworks */,
-				4006E22425AD0D06000306A8 /* Resources */,
+				4A66E8AC25ACFDA4004972FF /* Sources */,
+				4A66E8AD25ACFDA4004972FF /* Frameworks */,
+				4A66E8AE25ACFDA4004972FF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SpeakAR;
-			productName = SpeakAR;
-			productReference = 4006E22625AD0D06000306A8 /* SpeakAR.app */;
+			packageProductDependencies = (
+				4A4B691825AEFEF500123F05 /* FocusEntity */,
+			);
+			productName = "Spatial Speaker";
+			productReference = 4A66E8B025ACFDA4004972FF /* SpeakAR.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4006E21E25AD0D06000306A8 /* Project object */ = {
+		4A66E8A825ACFDA4004972FF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					4006E22525AD0D06000306A8 = {
+					4A66E8AF25ACFDA4004972FF = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
-			buildConfigurationList = 4006E22125AD0D06000306A8 /* Build configuration list for PBXProject "SpeakAR" */;
+			buildConfigurationList = 4A66E8AB25ACFDA4004972FF /* Build configuration list for PBXProject "speakAR" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,43 +130,47 @@
 				en,
 				Base,
 			);
-			mainGroup = 4006E21D25AD0D06000306A8;
-			productRefGroup = 4006E22725AD0D06000306A8 /* Products */;
+			mainGroup = 4A66E8A725ACFDA4004972FF;
+			packageReferences = (
+				4A4B691725AEFEF500123F05 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
+			productRefGroup = 4A66E8B125ACFDA4004972FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4006E22525AD0D06000306A8 /* SpeakAR */,
+				4A66E8AF25ACFDA4004972FF /* SpeakAR */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4006E22425AD0D06000306A8 /* Resources */ = {
+		4A66E8AE25ACFDA4004972FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4006E23325AD0D07000306A8 /* Preview Assets.xcassets in Resources */,
-				4006E23025AD0D07000306A8 /* Assets.xcassets in Resources */,
+				4A66E8BD25ACFDA8004972FF /* Preview Assets.xcassets in Resources */,
+				4ACA86BB25AFCC0C007ADEEF /* Apple.usdc in Resources */,
+				4A66E8BA25ACFDA8004972FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4006E22225AD0D06000306A8 /* Sources */ = {
+		4A66E8AC25ACFDA4004972FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4006E22C25AD0D06000306A8 /* ContentView.swift in Sources */,
-				4006E22A25AD0D06000306A8 /* AppDelegate.swift in Sources */,
-				4006E22E25AD0D06000306A8 /* Experience.rcproject in Sources */,
+				4A4B691525AEF7EE00123F05 /* Model.swift in Sources */,
+				4A66E8B625ACFDA5004972FF /* ContentView.swift in Sources */,
+				4A66E8B425ACFDA4004972FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4006E23525AD0D07000306A8 /* Debug */ = {
+		4A66E8BF25ACFDA8004972FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -211,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		4006E23625AD0D07000306A8 /* Release */ = {
+		4A66E8C025ACFDA8004972FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,42 +286,42 @@
 			};
 			name = Release;
 		};
-		4006E23825AD0D07000306A8 /* Debug */ = {
+		4A66E8C225ACFDA8004972FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SpeakAR/Preview Content\"";
-				DEVELOPMENT_TEAM = Z27TRPT2NF;
+				DEVELOPMENT_ASSET_PATHS = "\"speakAR/Preview Content\"";
+				DEVELOPMENT_TEAM = WZ5RYR2QMJ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SpeakAR/Info.plist;
+				INFOPLIST_FILE = speakAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bread-Dan.SpeakAR";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dan.speakAR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		4006E23925AD0D07000306A8 /* Release */ = {
+		4A66E8C325ACFDA8004972FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SpeakAR/Preview Content\"";
-				DEVELOPMENT_TEAM = Z27TRPT2NF;
+				DEVELOPMENT_ASSET_PATHS = "\"speakAR/Preview Content\"";
+				DEVELOPMENT_TEAM = WZ5RYR2QMJ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SpeakAR/Info.plist;
+				INFOPLIST_FILE = speakAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bread-Dan.SpeakAR";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dan.speakAR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,25 +331,44 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4006E22125AD0D06000306A8 /* Build configuration list for PBXProject "SpeakAR" */ = {
+		4A66E8AB25ACFDA4004972FF /* Build configuration list for PBXProject "speakAR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4006E23525AD0D07000306A8 /* Debug */,
-				4006E23625AD0D07000306A8 /* Release */,
+				4A66E8BF25ACFDA8004972FF /* Debug */,
+				4A66E8C025ACFDA8004972FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4006E23725AD0D07000306A8 /* Build configuration list for PBXNativeTarget "SpeakAR" */ = {
+		4A66E8C125ACFDA8004972FF /* Build configuration list for PBXNativeTarget "SpeakAR" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4006E23825AD0D07000306A8 /* Debug */,
-				4006E23925AD0D07000306A8 /* Release */,
+				4A66E8C225ACFDA8004972FF /* Debug */,
+				4A66E8C325ACFDA8004972FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A4B691725AEFEF500123F05 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A4B691825AEFEF500123F05 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A4B691725AEFEF500123F05 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 4006E21E25AD0D06000306A8 /* Project object */;
+	rootObject = 4A66E8A825ACFDA4004972FF /* Project object */;
 }

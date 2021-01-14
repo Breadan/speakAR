@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SpeakAR
+//  Spatial Speaker
 //
-//  Created by Brendan Yang on 1/11/21.
+//  Created by Daniel Jung on 1/11/21.
 //
 
 import UIKit
