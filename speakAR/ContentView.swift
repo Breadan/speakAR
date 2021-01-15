@@ -64,22 +64,38 @@ struct ARViewContainer: UIViewRepresentable {
     
     func updateUIView(_ uiView: ARView, context: Context) {
         if let model = self.modelConfirmedForPlacement {
-
+            
             //.clone creates copy, but references original copy.
             if let modelEntity = model.modelEntity {
                 print("DEBUG: adding model to scene - \(model.modelName)")
                 let anchorEntity = AnchorEntity(plane: .any)
-                anchorEntity.addChild(modelEntity.clone(recursive: true))
+                anchorEntity.addChild(modelEntity)
                 uiView.scene.addAnchor(anchorEntity)
+            
+                
+                
+                //let howlLoaded = try? Entity.loadAsync(contentsOf: howlURL!)
+                let resource = try! AudioFileResource.load(named: "Howl's Moving Castle.mp3" , in: nil, inputMode: .spatial, loadingStrategy: .preload, shouldLoop: true)
+                
+                let audioController = modelEntity.prepareAudio(resource)
+                audioController.play()
+                
+                //modelEntity.prepareAudio()
+                
+                //yes sirrrrrrrrrrrrrrr
+                //AudioResource.InputMode.spatial
+                
+                
             } else {
                 print("DEBUG: Unable to load modelEntity for \(model.modelName)")
             }
             
             DispatchQueue.main.async {
                 self.modelConfirmedForPlacement = nil
-
+                
             }
         }
+        
     }
     
 }
@@ -92,22 +108,22 @@ struct SpeakerView: View {
     var models: Model
     
     var body: some View {
-            HStack(spacing: 30) {
-                    Button(action: {
-                        print("DEBUG: selected \(self.models.modelName)")
-                        
-                        self.selectedModel = self.models
-                        self.isPlacementEnabled = true
-                    }) {
-                        Image(uiImage: self.models.image)
-                            .resizable()
-                            .frame(height: 80)
-                            .aspectRatio(1/1, contentMode: .fit)
-                    }
-                    .buttonStyle(PlainButtonStyle())
-                    .background(Color.white.opacity(1))
-                    .cornerRadius(120)
+        HStack(spacing: 30) {
+            Button(action: {
+                print("DEBUG: selected \(self.models.modelName)")
+                
+                self.selectedModel = self.models
+                self.isPlacementEnabled = true
+            }) {
+                Image(uiImage: self.models.image)
+                    .resizable()
+                    .frame(height: 100)
+                    .aspectRatio(1/1, contentMode: .fit)
             }
+            .buttonStyle(PlainButtonStyle())
+            .background(Color.white.opacity(1))
+            .cornerRadius(120)
+        }
         .padding(20)
     }
 }
