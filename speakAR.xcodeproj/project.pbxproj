@@ -13,6 +13,7 @@
 		4A66E8B625ACFDA5004972FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A66E8B525ACFDA5004972FF /* ContentView.swift */; };
 		4A66E8BA25ACFDA8004972FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A66E8B925ACFDA8004972FF /* Assets.xcassets */; };
 		4A66E8BD25ACFDA8004972FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A66E8BC25ACFDA8004972FF /* Preview Assets.xcassets */; };
+		4A6B2CA025B1AB7B002086A2 /* Howl's Moving Castle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4A6B2C9F25B1AB7B002086A2 /* Howl's Moving Castle.mp3 */; };
 		4ACA86BB25AFCC0C007ADEEF /* Apple.usdc in Resources */ = {isa = PBXBuildFile; fileRef = 4ACA86BA25AFCC0C007ADEEF /* Apple.usdc */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		4A66E8B925ACFDA8004972FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A66E8BC25ACFDA8004972FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A66E8BE25ACFDA8004972FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6B2C9F25B1AB7B002086A2 /* Howl's Moving Castle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Howl's Moving Castle.mp3"; path = "../../../../../../../../Downloads/Howl's Moving Castle.mp3"; sourceTree = "<group>"; };
 		4ACA86BA25AFCC0C007ADEEF /* Apple.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Apple.usdc; path = ../../../Apple.usdc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 				4A66E8B325ACFDA4004972FF /* AppDelegate.swift */,
 				4A66E8B525ACFDA5004972FF /* ContentView.swift */,
 				4A4B691425AEF7EE00123F05 /* Model.swift */,
+				4A6B2C9E25B1AB66002086A2 /* Sounds */,
 				4A66E8C725AD06B4004972FF /* Models */,
 				4A66E8B925ACFDA8004972FF /* Assets.xcassets */,
 				4A66E8BE25ACFDA8004972FF /* Info.plist */,
@@ -83,6 +86,14 @@
 				4ACA86BA25AFCC0C007ADEEF /* Apple.usdc */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4A6B2C9E25B1AB66002086A2 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				4A6B2C9F25B1AB7B002086A2 /* Howl's Moving Castle.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			files = (
 				4A66E8BD25ACFDA8004972FF /* Preview Assets.xcassets in Resources */,
 				4ACA86BB25AFCC0C007ADEEF /* Apple.usdc in Resources */,
+				4A6B2CA025B1AB7B002086A2 /* Howl's Moving Castle.mp3 in Resources */,
 				4A66E8BA25ACFDA8004972FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
