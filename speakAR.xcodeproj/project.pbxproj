@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4091089A25B0950E004562CA /* Apple.usdc in Resources */ = {isa = PBXBuildFile; fileRef = 4091089925B0950E004562CA /* Apple.usdc */; };
 		4A4B691525AEF7EE00123F05 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B691425AEF7EE00123F05 /* Model.swift */; };
 		4A4B691925AEFEF500123F05 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 4A4B691825AEFEF500123F05 /* FocusEntity */; };
 		4A66E8B425ACFDA4004972FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A66E8B325ACFDA4004972FF /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4091089925B0950E004562CA /* Apple.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Apple.usdc; path = ../../../../../Downloads/Apple.usdc; sourceTree = "<group>"; };
 		4A4B691425AEF7EE00123F05 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		4A66E8B025ACFDA4004972FF /* SpeakAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeakAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A66E8B325ACFDA4004972FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +85,7 @@
 		4A66E8C725AD06B4004972FF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4ACA86BA25AFCC0C007ADEEF /* Apple.usdc */,
+				4091089925B0950E004562CA /* Apple.usdc */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,14 +307,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"speakAR/Preview Content\"";
-				DEVELOPMENT_TEAM = WZ5RYR2QMJ;
+				DEVELOPMENT_TEAM = Z27TRPT2NF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = speakAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dan.speakAR";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dann.speakAR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,14 +328,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"speakAR/Preview Content\"";
-				DEVELOPMENT_TEAM = WZ5RYR2QMJ;
+				DEVELOPMENT_TEAM = Z27TRPT2NF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = speakAR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dan.speakAR";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dann.speakAR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
