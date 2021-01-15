@@ -18,16 +18,18 @@ class Model {
     var image: UIImage
     var modelEntity: ModelEntity?
     
+    //this is our entity.
+    
     private var cancellable: AnyCancellable? = nil
     
     //having ?, optional, allows you to deal with "nil".
-    init(modelName: String) {
-        self.modelName = modelName
+    init(inputtedModelName: String) {
+        self.modelName = inputtedModelName
         
-        self.image = UIImage(named: modelName)!
+        self.image = UIImage(named: inputtedModelName)!
         
         //asynchronously load.
-        let fileName = modelName + ".usdc"
+        let fileName = inputtedModelName + ".usdc"
         self.cancellable = ModelEntity.loadModelAsync(named: fileName)
             .sink(receiveCompletion: { loadCompletion in
                 //handle our error
