@@ -17,12 +17,11 @@ class Model {
     var modelName: String
     var image: UIImage
     var modelEntity: ModelEntity?
-    
     //this is our entity.
     
     private var cancellable: AnyCancellable? = nil
-    
     //having ?, optional, allows you to deal with "nil".
+    
     init(inputtedModelName: String) {
         self.modelName = inputtedModelName
         
@@ -34,7 +33,7 @@ class Model {
             .sink(receiveCompletion: { loadCompletion in
                 //handle our error
                 print("DEBUG: Unable to load modelEntity for modelName: \(self.modelName)")
-            }, receiveValue: {modelEntity in
+            }, receiveValue: { modelEntity in
                 //get our modelEntity
                 self.modelEntity = modelEntity
                 print("DEBUG: successfully loaded modelEntity for modelName: \(self.modelName)")
