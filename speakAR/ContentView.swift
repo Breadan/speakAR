@@ -22,9 +22,6 @@ struct ContentView : View {
         return model
     }()
     
-    
-    
-    
     var body: some View {
         ZStack(alignment: .bottom) {
             ARViewContainer(modelConfirmedForPlacement: self.$modelConfirmedForPlacement).edgesIgnoringSafeArea(.all)
@@ -63,9 +60,13 @@ struct ARViewContainer: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {
+        
+        enum requestError: Error {
+            case ResultIsNilError
+        }
+        
         if let model = self.modelConfirmedForPlacement {
             
-            //.clone creates copy, but references original copy.
             if let modelEntity = model.modelEntity {
                 print("DEBUG: adding model to scene - \(model.modelName)")
                 let anchorEntity = AnchorEntity(plane: .any)
@@ -74,15 +75,29 @@ struct ARViewContainer: UIViewRepresentable {
             
                 
                 
-                //let howlLoaded = try? Entity.loadAsync(contentsOf: howlURL!)
-                let resource = try! AudioFileResource.load(named: "Howl's Moving Castle.mp3" , in: nil, inputMode: .spatial, loadingStrategy: .preload, shouldLoop: true)
-                
-                let audioController = modelEntity.prepareAudio(resource)
-                audioController.play()
+                do {
+                    // .loadAsync has no throwing functions, remove try statement
+                    let resourceRequest = try AudioFileResource.loadAsync(named: "Blue Wednesday - Sayonara.mp3",
+                                                               in: nil,
+                                                               inputMode: .spatial,
+                                                               loadingStrategy: .preload,
+                                                               shouldLoop: true)
+                    // Try-catch in case request is foul
+                    let resource = try resourceRequest.result?.get()
+                    // Guard in case result is nil
+                    guard resource != nil else {
+                        print("ERROR: Result is nil Error")
+                        throw requestError.ResultIsNilError
+                    }
+                    let audioController = modelEntity.prepareAudio(resource!)
+                    audioController.play()
+                } catch {
+                    print("ERROR: LoadRequest Error")
+                }
                 
                 //modelEntity.prepareAudio()
                 
-                //yes sirrrrrrrrrrrrrrr
+                //yes sirrrrrrrrrrrrrrr. Yessir!
                 //AudioResource.InputMode.spatial
                 
                 
@@ -102,7 +117,7 @@ struct ARViewContainer: UIViewRepresentable {
 
 
 struct SpeakerView: View {
-    //binding variable = variable that has his source of truth outside of the speakerview struct. passing it as binding variable allows re
+    //binding variable = variable that has his source of truth outside of the speakerview struct. passing it as binding variable allows read&write
     @Binding var isPlacementEnabled: Bool
     @Binding var selectedModel: Model?
     var models: Model
