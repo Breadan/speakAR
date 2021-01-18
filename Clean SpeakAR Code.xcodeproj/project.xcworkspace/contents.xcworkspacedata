@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/breadan/Documents/XCode/speakAR/Clean SpeakAR Code/Model.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Clean SpeakAR Code/Models">
+   </FileRef>
+   <FileRef
+      location = "group:../Clean SpeakAR Code/Song.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Clean SpeakAR Code/Sounds">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
