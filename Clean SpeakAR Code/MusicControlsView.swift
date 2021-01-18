@@ -28,8 +28,8 @@ struct MusicControlsView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black)
+//        .background(Color.black)
         .edgesIgnoringSafeArea(.all)
-        .opacity(1)
+//        .opacity(1)
     }
 }
