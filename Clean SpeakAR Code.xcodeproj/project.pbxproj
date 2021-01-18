@@ -7,21 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		400CAAA425B49816001811A6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400CAAA325B49816001811A6 /* Model.swift */; };
-		400CAAA725B49BFB001811A6 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400CAAA625B49BFB001811A6 /* Song.swift */; };
-		400CAAB425B4C42E001811A6 /* SpeakerHD.reality in Resources */ = {isa = PBXBuildFile; fileRef = 400CAAB325B4C42E001811A6 /* SpeakerHD.reality */; };
-		400CAABF25B50504001811A6 /* [ City Your City & Frasco ] Micro Summer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 400CAAB925B50503001811A6 /* [ City Your City & Frasco ] Micro Summer.mp3 */; };
-		400CAAC025B50504001811A6 /* Evolve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 400CAABA25B50503001811A6 /* Evolve.mp3 */; };
-		400CAAC125B50504001811A6 /* Post Malone - Circles (Instrumental).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 400CAABB25B50503001811A6 /* Post Malone - Circles (Instrumental).mp3 */; };
-		400CAAC225B50504001811A6 /* Silk (Favored Nations Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 400CAABC25B50503001811A6 /* Silk (Favored Nations Remix).mp3 */; };
-		400CAAC325B50504001811A6 /* Uppermost - Beautiful Light.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 400CAABD25B50503001811A6 /* Uppermost - Beautiful Light.mp3 */; };
-		400CAAC425B50504001811A6 /* Kupla - Friendly Creatures.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 400CAABE25B50504001811A6 /* Kupla - Friendly Creatures.mp3 */; };
-		4034476B25B411DD007FEE48 /* sagun - rains.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4034476625B411DD007FEE48 /* sagun - rains.mp3 */; };
-		4034476C25B411DD007FEE48 /* Rayons - From Paradise Past.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4034476725B411DD007FEE48 /* Rayons - From Paradise Past.mp3 */; };
-		4034476D25B411DD007FEE48 /* Hisaishi - Howl's Moving Castle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4034476825B411DD007FEE48 /* Hisaishi - Howl's Moving Castle.mp3 */; };
-		4034476E25B411DD007FEE48 /* Toby Tranter - High Noon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4034476925B411DD007FEE48 /* Toby Tranter - High Noon.mp3 */; };
-		4034476F25B411DD007FEE48 /* SF & KMcE - Sunrise On Southey Street.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4034476A25B411DD007FEE48 /* SF & KMcE - Sunrise On Southey Street.mp3 */; };
-		408BBEB325B3F1A2008AF9E2 /* Speaker.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 408BBEB225B3F1A2008AF9E2 /* Speaker.usdz */; };
+		4A0B848925B432AC00B81587 /* MusicControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B848825B432AC00B81587 /* MusicControlsView.swift */; };
+		4A0B848C25B432D100B81587 /* MusicControlsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B848B25B432D100B81587 /* MusicControlsButton.swift */; };
 		4A51265625B2B5D00047B67D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A51265525B2B5D00047B67D /* AppDelegate.swift */; };
 		4A51265825B2B5D00047B67D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A51265725B2B5D00047B67D /* ContentView.swift */; };
 		4A51265C25B2B5D20047B67D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A51265B25B2B5D20047B67D /* Assets.xcassets */; };
@@ -29,33 +16,22 @@
 		4A6D700125B2BA36000EA2FC /* Apple Homepod.usd in Resources */ = {isa = PBXBuildFile; fileRef = 4A6D700025B2BA36000EA2FC /* Apple Homepod.usd */; };
 		4A6D700425B2F14B000EA2FC /* SpeakerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D700325B2F14B000EA2FC /* SpeakerButton.swift */; };
 		4A6D700825B302AD000EA2FC /* PlacementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D700725B302AD000EA2FC /* PlacementButton.swift */; };
+		4A6D700E25B30F9A000EA2FC /* Apple.usdc in Resources */ = {isa = PBXBuildFile; fileRef = 4A6D700D25B30F99000EA2FC /* Apple.usdc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		400CAAA325B49816001811A6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		400CAAA625B49BFB001811A6 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		400CAAB325B4C42E001811A6 /* SpeakerHD.reality */ = {isa = PBXFileReference; lastKnownFileType = file; name = SpeakerHD.reality; path = ../../../../../Desktop/Models/SpeakerHD.reality; sourceTree = "<group>"; };
-		400CAAB925B50503001811A6 /* [ City Your City & Frasco ] Micro Summer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "[ City Your City & Frasco ] Micro Summer.mp3"; sourceTree = "<group>"; };
-		400CAABA25B50503001811A6 /* Evolve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Evolve.mp3; sourceTree = "<group>"; };
-		400CAABB25B50503001811A6 /* Post Malone - Circles (Instrumental).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Post Malone - Circles (Instrumental).mp3"; sourceTree = "<group>"; };
-		400CAABC25B50503001811A6 /* Silk (Favored Nations Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Silk (Favored Nations Remix).mp3"; sourceTree = "<group>"; };
-		400CAABD25B50503001811A6 /* Uppermost - Beautiful Light.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Uppermost - Beautiful Light.mp3"; sourceTree = "<group>"; };
-		400CAABE25B50504001811A6 /* Kupla - Friendly Creatures.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Kupla - Friendly Creatures.mp3"; sourceTree = "<group>"; };
-		4034476625B411DD007FEE48 /* sagun - rains.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sagun - rains.mp3"; sourceTree = "<group>"; };
-		4034476725B411DD007FEE48 /* Rayons - From Paradise Past.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rayons - From Paradise Past.mp3"; sourceTree = "<group>"; };
-		4034476825B411DD007FEE48 /* Hisaishi - Howl's Moving Castle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hisaishi - Howl's Moving Castle.mp3"; sourceTree = "<group>"; };
-		4034476925B411DD007FEE48 /* Toby Tranter - High Noon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Toby Tranter - High Noon.mp3"; sourceTree = "<group>"; };
-		4034476A25B411DD007FEE48 /* SF & KMcE - Sunrise On Southey Street.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SF & KMcE - Sunrise On Southey Street.mp3"; sourceTree = "<group>"; };
-		408BBEB225B3F1A2008AF9E2 /* Speaker.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Speaker.usdz; path = ../../../../../Desktop/Models/Speaker.usdz; sourceTree = "<group>"; };
+		4A0B848825B432AC00B81587 /* MusicControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlsView.swift; sourceTree = "<group>"; };
+		4A0B848B25B432D100B81587 /* MusicControlsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlsButton.swift; sourceTree = "<group>"; };
 		4A51265225B2B5D00047B67D /* Clean SpeakAR Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clean SpeakAR Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A51265525B2B5D00047B67D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A51265725B2B5D00047B67D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "Clean SpeakAR Code/ContentView.swift"; sourceTree = SOURCE_ROOT; };
+		4A51265725B2B5D00047B67D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4A51265B25B2B5D20047B67D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A51265E25B2B5D20047B67D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A51266025B2B5D30047B67D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A6D700025B2BA36000EA2FC /* Apple Homepod.usd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apple Homepod.usd"; sourceTree = "<group>"; };
 		4A6D700325B2F14B000EA2FC /* SpeakerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerButton.swift; sourceTree = "<group>"; };
 		4A6D700725B302AD000EA2FC /* PlacementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButton.swift; sourceTree = "<group>"; };
+		4A6D700D25B30F99000EA2FC /* Apple.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Apple.usdc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,24 +45,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4034475A25B3FCD8007FEE48 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				400CAAB925B50503001811A6 /* [ City Your City & Frasco ] Micro Summer.mp3 */,
-				400CAABA25B50503001811A6 /* Evolve.mp3 */,
-				400CAABE25B50504001811A6 /* Kupla - Friendly Creatures.mp3 */,
-				400CAABB25B50503001811A6 /* Post Malone - Circles (Instrumental).mp3 */,
-				400CAABC25B50503001811A6 /* Silk (Favored Nations Remix).mp3 */,
-				400CAABD25B50503001811A6 /* Uppermost - Beautiful Light.mp3 */,
-				4034476825B411DD007FEE48 /* Hisaishi - Howl's Moving Castle.mp3 */,
-				4034476725B411DD007FEE48 /* Rayons - From Paradise Past.mp3 */,
-				4034476A25B411DD007FEE48 /* SF & KMcE - Sunrise On Southey Street.mp3 */,
-				4034476925B411DD007FEE48 /* Toby Tranter - High Noon.mp3 */,
-				4034476625B411DD007FEE48 /* sagun - rains.mp3 */,
-			);
-			path = Sounds;
-			sourceTree = "<group>";
-		};
 		4A51264925B2B5D00047B67D = {
 			isa = PBXGroup;
 			children = (
@@ -106,15 +64,14 @@
 		4A51265425B2B5D00047B67D /* Clean SpeakAR Code */ = {
 			isa = PBXGroup;
 			children = (
-				400CAAA625B49BFB001811A6 /* Song.swift */,
 				4A51265525B2B5D00047B67D /* AppDelegate.swift */,
 				4A51265725B2B5D00047B67D /* ContentView.swift */,
-				400CAAA325B49816001811A6 /* Model.swift */,
 				4A6D700325B2F14B000EA2FC /* SpeakerButton.swift */,
 				4A6D700725B302AD000EA2FC /* PlacementButton.swift */,
+				4A0B848B25B432D100B81587 /* MusicControlsButton.swift */,
+				4A0B848825B432AC00B81587 /* MusicControlsView.swift */,
 				4A51265B25B2B5D20047B67D /* Assets.xcassets */,
 				4A51266025B2B5D30047B67D /* Info.plist */,
-				4034475A25B3FCD8007FEE48 /* Sounds */,
 				4A6D6FFF25B2BA1B000EA2FC /* Models */,
 				4A51265D25B2B5D20047B67D /* Preview Content */,
 			);
@@ -132,8 +89,7 @@
 		4A6D6FFF25B2BA1B000EA2FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				400CAAB325B4C42E001811A6 /* SpeakerHD.reality */,
-				408BBEB225B3F1A2008AF9E2 /* Speaker.usdz */,
+				4A6D700D25B30F99000EA2FC /* Apple.usdc */,
 				4A6D700025B2BA36000EA2FC /* Apple Homepod.usd */,
 			);
 			path = Models;
@@ -196,22 +152,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				400CAAC225B50504001811A6 /* Silk (Favored Nations Remix).mp3 in Resources */,
-				400CAAC425B50504001811A6 /* Kupla - Friendly Creatures.mp3 in Resources */,
 				4A51265F25B2B5D20047B67D /* Preview Assets.xcassets in Resources */,
-				400CAAC025B50504001811A6 /* Evolve.mp3 in Resources */,
-				400CAAC125B50504001811A6 /* Post Malone - Circles (Instrumental).mp3 in Resources */,
-				4034476D25B411DD007FEE48 /* Hisaishi - Howl's Moving Castle.mp3 in Resources */,
+				4A6D700E25B30F9A000EA2FC /* Apple.usdc in Resources */,
 				4A6D700125B2BA36000EA2FC /* Apple Homepod.usd in Resources */,
-				4034476B25B411DD007FEE48 /* sagun - rains.mp3 in Resources */,
 				4A51265C25B2B5D20047B67D /* Assets.xcassets in Resources */,
-				408BBEB325B3F1A2008AF9E2 /* Speaker.usdz in Resources */,
-				400CAAB425B4C42E001811A6 /* SpeakerHD.reality in Resources */,
-				4034476C25B411DD007FEE48 /* Rayons - From Paradise Past.mp3 in Resources */,
-				4034476F25B411DD007FEE48 /* SF & KMcE - Sunrise On Southey Street.mp3 in Resources */,
-				400CAAC325B50504001811A6 /* Uppermost - Beautiful Light.mp3 in Resources */,
-				4034476E25B411DD007FEE48 /* Toby Tranter - High Noon.mp3 in Resources */,
-				400CAABF25B50504001811A6 /* [ City Your City & Frasco ] Micro Summer.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,12 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				400CAAA425B49816001811A6 /* Model.swift in Sources */,
 				4A51265825B2B5D00047B67D /* ContentView.swift in Sources */,
 				4A6D700825B302AD000EA2FC /* PlacementButton.swift in Sources */,
+				4A0B848925B432AC00B81587 /* MusicControlsView.swift in Sources */,
+				4A0B848C25B432D100B81587 /* MusicControlsButton.swift in Sources */,
 				4A51265625B2B5D00047B67D /* AppDelegate.swift in Sources */,
 				4A6D700425B2F14B000EA2FC /* SpeakerButton.swift in Sources */,
-				400CAAA725B49BFB001811A6 /* Song.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,14 +301,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Clean SpeakAR Code/Preview Content\"";
-				DEVELOPMENT_TEAM = Z27TRPT2NF;
+				DEVELOPMENT_TEAM = WZ5RYR2QMJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Clean SpeakAR Code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dann.Clean-SpeakAR-Code";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dan.Clean-SpeakAR-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -378,14 +322,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Clean SpeakAR Code/Preview Content\"";
-				DEVELOPMENT_TEAM = Z27TRPT2NF;
+				DEVELOPMENT_TEAM = WZ5RYR2QMJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Clean SpeakAR Code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dann.Clean-SpeakAR-Code";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dan.Clean-SpeakAR-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

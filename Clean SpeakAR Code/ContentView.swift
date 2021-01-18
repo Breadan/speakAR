@@ -10,11 +10,14 @@ import RealityKit
 import ARKit
 import Combine
 
+
 struct ContentView : View {
     @State private var isSpeakerSelected = false
     @State private var isSpeakerPlaced = false
+    @State private var isMusicControls = false
+
     // Setting our stored property to the closure's returned value, NOT the actual closure itself (i.e., we called the closure using the '()' function notation to RETURN value)
-    private var models: Model? = {() -> Model in
+    private var models: Model? = { () -> Model in
         let model = Model(modelName: "Speaker", fileExt: ".usdz")
         return model
     }()
@@ -57,16 +60,26 @@ struct ContentView : View {
         ZStack(alignment: .bottom) {
             ARViewContainer(isSpeakerPlaced: $isSpeakerPlaced, speakerModel: models, speakerSongs: songs)
                 .edgesIgnoringSafeArea(.all)
-            
-            if isSpeakerSelected && !isSpeakerPlaced{
-                PlacementButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
+            VStack {
+                if isMusicControls {
+                    MusicControlsView(isMusicControls: $isMusicControls)
+                        //TODO: transition is only applied when loading in the MusicControlsView. I need there to be transition loading out of MusicControlsView too. Also, why is it stutter-y? transition's not smooth. is the main content view working too hard making it lag or something
+                        .transition(.move(edge: .bottom))
+
+                }
+                else {
+                    MusicControlsButton(isMusicControls: $isMusicControls)
+                    
+                    if isSpeakerSelected && !isSpeakerPlaced {
+                        PlacementButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
+                    }
+                    
+                    else {
+                        SpeakerButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
+                    }
+                }
+                
             }
-            
-            else {
-                SpeakerButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
-            }
-            
-            
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -79,7 +92,6 @@ struct ARViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
-
         //configuring stuff i guess
         let config = ARWorldTrackingConfiguration()
         config.planeDetection = [.horizontal, .vertical]
@@ -112,7 +124,6 @@ struct ARViewContainer: UIViewRepresentable {
             } else {                
                 print("ERROR: LoadModel Error")
             }
-            
             DispatchQueue.main.async {
                 isSpeakerPlaced = false
             }

@@ -35,6 +35,5 @@ class Model {
                 self.modelEntity = value
             }
     }
-    
 }
 
