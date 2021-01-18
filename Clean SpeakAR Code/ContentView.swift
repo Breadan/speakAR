@@ -10,55 +10,62 @@ import RealityKit
 import ARKit
 import Combine
 
+enum loadStrat: UInt {
+    case onAppLaunch
+    case realTime
+}
 
 struct ContentView : View {
     @State private var isSpeakerSelected = false
     @State private var isSpeakerPlaced = false
     @State private var isMusicControls = false
-
+    
+    private static var resourceLoadStrat = loadStrat.realTime
+    
     // Setting our stored property to the closure's returned value, NOT the actual closure itself (i.e., we called the closure using the '()' function notation to RETURN value)
     private var models: Model? = { () -> Model in
         let model = Model(modelName: "Speaker", fileExt: ".usdz")
         return model
     }()
     
-    private var songs: [Song?] = { () -> [Song] in
-        var songs: [Song] = []
-       
+    @State private var songs: [String:Song?] = { () -> [String:Song?] in
         let FM = FileManager.default
-        
+        var songs = Dictionary<String,Song?>()
         if let resourcesPath = try? FM.contentsOfDirectory(atPath: Bundle.main.bundlePath) {
-            var songURLs = [String]()
-            for resource in resourcesPath where resource.hasSuffix("mp3") {
-                print("DEBUG: Found resource \(resource)")
-                songURLs.append(resource)
+            for resourceURL in resourcesPath where resourceURL.hasSuffix("mp3") {
+                print("DEBUG: Found song resource \(resourceURL)")
+                songs[resourceURL] = nil as Song?   // Need to explicitly SET TO 'nil', 'nil' usually inferred as "to remove entry"
             }
-            
-            // Use a closure to efficiently operate on each String from 'songURLs' to append to 'songs'
-            songURLs.forEach { (songURL: String) -> Void in
-                // Ensure specified song URL has a .extension by optionally bindng String.Index?
-                if let extIndex: String.Index = songURL.firstIndex(of:".") {
-                    songs.append(
-                        // Appending instances of Songs created from songURL substrings
-                        Song(songName: String(songURL[..<extIndex]),
-                             fileExt: String(songURL[extIndex..<songURL.endIndex])
-                        ))
-                } else {
-                    print("ERROR: Invalid song URL!")
+            /* This loads resources in loading-screen. We can move loading requests to when the user places the speaker or confirm selects song for speaker. */
+            if(resourceLoadStrat == loadStrat.onAppLaunch) {
+                // Use a closure to efficiently operate on each String from 'songURLs' to append to 'songs'
+                Array(songs.keys).forEach { (songURL: String) -> Void in
+                    // Ensure specified song URL has a .extension by optionally bindng String.Index?
+                    if let extIndex: String.Index = songURL.firstIndex(of:".") {
+                        songs[songURL] =
+                            // Pairing 'songURL' key with 'Song' value
+                            Song(songName: String(songURL[..<extIndex]),
+                                 fileExt: String(songURL[extIndex..<songURL.endIndex]))
+                    } else {
+                        print("ERROR: Invalid song URL!")
+                    }
                 }
+                print("DEBUG: Requested a total of \(songs.count) song resources")
+            }
+            else if(resourceLoadStrat == loadStrat.realTime) {
+                print("DEBUG: Skipping song pre-requests... using real-time loader")
             }
             
         } else {
-            print("DEBUG: No song files found")
-            return []
+            print("DEBUG: No .mp3 song files found")
+            return [:]
         }
-        
         return songs
     }()
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            ARViewContainer(isSpeakerPlaced: $isSpeakerPlaced, speakerModel: models, speakerSongs: songs)
+            ARViewContainer(isSpeakerPlaced: $isSpeakerPlaced, resourceLoadStrat: ContentView.resourceLoadStrat, speakerModels: models, speakerSongs: $songs)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 if isMusicControls {
@@ -87,8 +94,10 @@ struct ContentView : View {
 
 struct ARViewContainer: UIViewRepresentable {
     @Binding var isSpeakerPlaced: Bool
-    var speakerModel: Model?
-    var speakerSongs: [Song?]
+    
+    var resourceLoadStrat: loadStrat
+    var speakerModels: Model?
+    @Binding var speakerSongs: [String:Song?]
     
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
@@ -107,22 +116,59 @@ struct ARViewContainer: UIViewRepresentable {
     
     func updateUIView(_ uiView: ARView, context: Context) {
         if isSpeakerPlaced {
-            if let speaker = speakerModel?.modelEntity {
+            // Speaker setup
+            if let speaker = speakerModels?.modelEntity {
                 print("DEBUG: Placed Speaker Model")
                 let anchorEntity = AnchorEntity(plane: .any)
                 anchorEntity.addChild(speaker)
                 uiView.scene.addAnchor(anchorEntity)
-                // Lets play more than one song!
-                let randSongIndex = Int.random(in: 0..<speakerSongs.count)
                 
-                if let song = speakerSongs[randSongIndex]?.songResource {
-                    print("DEBUG: Playing Speaker Song: \(speakerSongs[randSongIndex]!.songName)")
-                    let audioController = speaker.prepareAudio(song)
-                    audioController.play()
+                // Song setup
+                let audioController: AudioPlaybackController
+                if(speakerSongs.count > 0) {
+                    let randSongIndex = Int.random(in: 0..<speakerSongs.count)
+                    
+                    // Pre-requested song loader
+                    if(resourceLoadStrat == loadStrat.onAppLaunch) {
+                        if let songResource = Array(speakerSongs.values)[randSongIndex]?.songResource {
+                            print("DEBUG: Playing Speaker Song: \(Array(speakerSongs.values)[randSongIndex]!.songName)")
+                            audioController = speaker.prepareAudio(songResource)
+                            audioController.play()
+                        } else {
+                            print("ERROR: Load Song Error")
+                        }
+                    }
+                    // Real-time load song loader
+                    else if(resourceLoadStrat == loadStrat.realTime) {
+                        let songURL = Array(speakerSongs.keys)[randSongIndex]
+                        // Init/cache song if not already in dictionary
+                        if speakerSongs[songURL]! == nil {
+                            print("DEBUG: \(songURL) not cached, caching...")
+                            let extIndex = songURL.firstIndex(of:".")!
+                            DispatchQueue.main.async {
+                                speakerSongs[songURL] = Song(songName: String(songURL[..<extIndex]),
+                                                   fileExt: String(songURL[extIndex..<songURL.endIndex]))
+                            }
+                        }
+                        // Load song from dictionary and play
+                        if let song = speakerSongs[songURL]! {
+                            if let songResource = song.songResource {
+                                print("DEBUG: Playing Speaker Song: \(Array(speakerSongs.values)[randSongIndex]!.songName)")
+                                audioController = speaker.prepareAudio(songResource)
+                                audioController.play()
+                            } else {
+                                print("ERROR: Load songResource Error")
+                            }
+                        } else {
+                            print("ERROR: Load Song Error - is async request completed?")
+                        }
+                    }
+                    
+                } else {
+                    print("DEBUG: No songs available")
                 }
-                
             } else {                
-                print("ERROR: LoadModel Error")
+                print("ERROR: Load Model Error")
             }
             DispatchQueue.main.async {
                 isSpeakerPlaced = false

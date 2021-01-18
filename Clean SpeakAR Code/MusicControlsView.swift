@@ -16,7 +16,7 @@ struct MusicControlsView: View {
             VStack {
                 HStack {
                     Button(action: {
-                        print("selected song search bar")
+                        print("DEBUG: Selected Song Search Bar")
                     }) {
                         Text("Search for songs...")
                     }
