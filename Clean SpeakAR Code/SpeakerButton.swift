@@ -14,9 +14,9 @@ struct SpeakerButton: View {
     var body: some View {
         VStack {
             Spacer()
-            Button(action: {print("speaker button pressed")
+            Button(action: {
                 isSpeakerSelected = true
-                print("DEBUG: speaker has been selected")
+                print("DEBUG: Speaker button pressed")
             }) {
                     Image("Apple Homepod")
                     .resizable()
