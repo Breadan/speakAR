@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD:Clean SpeakAR Code.xcodeproj/project.pbxproj
+		408BBEB325B3F1A2008AF9E2 /* Speaker.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 408BBEB225B3F1A2008AF9E2 /* Speaker.usdz */; };
+=======
 		4A0B848925B432AC00B81587 /* MusicControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B848825B432AC00B81587 /* MusicControlsView.swift */; };
 		4A0B848C25B432D100B81587 /* MusicControlsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B848B25B432D100B81587 /* MusicControlsButton.swift */; };
+>>>>>>> dan-edits:speakAR.xcodeproj/project.pbxproj
 		4A51265625B2B5D00047B67D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A51265525B2B5D00047B67D /* AppDelegate.swift */; };
 		4A51265825B2B5D00047B67D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A51265725B2B5D00047B67D /* ContentView.swift */; };
 		4A51265C25B2B5D20047B67D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A51265B25B2B5D20047B67D /* Assets.xcassets */; };
@@ -16,12 +20,19 @@
 		4A6D700125B2BA36000EA2FC /* Apple Homepod.usd in Resources */ = {isa = PBXBuildFile; fileRef = 4A6D700025B2BA36000EA2FC /* Apple Homepod.usd */; };
 		4A6D700425B2F14B000EA2FC /* SpeakerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D700325B2F14B000EA2FC /* SpeakerButton.swift */; };
 		4A6D700825B302AD000EA2FC /* PlacementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D700725B302AD000EA2FC /* PlacementButton.swift */; };
+<<<<<<< HEAD:Clean SpeakAR Code.xcodeproj/project.pbxproj
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		408BBEB225B3F1A2008AF9E2 /* Speaker.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Speaker.usdz; path = ../../../../../Desktop/Models/Speaker.usdz; sourceTree = "<group>"; };
+=======
 		4A6D700E25B30F9A000EA2FC /* Apple.usdc in Resources */ = {isa = PBXBuildFile; fileRef = 4A6D700D25B30F99000EA2FC /* Apple.usdc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A0B848825B432AC00B81587 /* MusicControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlsView.swift; sourceTree = "<group>"; };
 		4A0B848B25B432D100B81587 /* MusicControlsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlsButton.swift; sourceTree = "<group>"; };
+>>>>>>> dan-edits:speakAR.xcodeproj/project.pbxproj
 		4A51265225B2B5D00047B67D /* Clean SpeakAR Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clean SpeakAR Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A51265525B2B5D00047B67D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A51265725B2B5D00047B67D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,7 +42,10 @@
 		4A6D700025B2BA36000EA2FC /* Apple Homepod.usd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apple Homepod.usd"; sourceTree = "<group>"; };
 		4A6D700325B2F14B000EA2FC /* SpeakerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerButton.swift; sourceTree = "<group>"; };
 		4A6D700725B302AD000EA2FC /* PlacementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButton.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD:Clean SpeakAR Code.xcodeproj/project.pbxproj
+=======
 		4A6D700D25B30F99000EA2FC /* Apple.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Apple.usdc; sourceTree = "<group>"; };
+>>>>>>> dan-edits:speakAR.xcodeproj/project.pbxproj
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +82,11 @@
 				4A51265725B2B5D00047B67D /* ContentView.swift */,
 				4A6D700325B2F14B000EA2FC /* SpeakerButton.swift */,
 				4A6D700725B302AD000EA2FC /* PlacementButton.swift */,
+<<<<<<< HEAD:Clean SpeakAR Code.xcodeproj/project.pbxproj
+=======
 				4A0B848B25B432D100B81587 /* MusicControlsButton.swift */,
 				4A0B848825B432AC00B81587 /* MusicControlsView.swift */,
+>>>>>>> dan-edits:speakAR.xcodeproj/project.pbxproj
 				4A51265B25B2B5D20047B67D /* Assets.xcassets */,
 				4A51266025B2B5D30047B67D /* Info.plist */,
 				4A6D6FFF25B2BA1B000EA2FC /* Models */,
@@ -89,7 +106,11 @@
 		4A6D6FFF25B2BA1B000EA2FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD:Clean SpeakAR Code.xcodeproj/project.pbxproj
+				408BBEB225B3F1A2008AF9E2 /* Speaker.usdz */,
+=======
 				4A6D700D25B30F99000EA2FC /* Apple.usdc */,
+>>>>>>> dan-edits:speakAR.xcodeproj/project.pbxproj
 				4A6D700025B2BA36000EA2FC /* Apple Homepod.usd */,
 			);
 			path = Models;
@@ -153,9 +174,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A51265F25B2B5D20047B67D /* Preview Assets.xcassets in Resources */,
+<<<<<<< HEAD:Clean SpeakAR Code.xcodeproj/project.pbxproj
+				4A6D700125B2BA36000EA2FC /* Apple Homepod.usd in Resources */,
+				4A51265C25B2B5D20047B67D /* Assets.xcassets in Resources */,
+				408BBEB325B3F1A2008AF9E2 /* Speaker.usdz in Resources */,
+=======
 				4A6D700E25B30F9A000EA2FC /* Apple.usdc in Resources */,
 				4A6D700125B2BA36000EA2FC /* Apple Homepod.usd in Resources */,
 				4A51265C25B2B5D20047B67D /* Assets.xcassets in Resources */,
+>>>>>>> dan-edits:speakAR.xcodeproj/project.pbxproj
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,8 +195,11 @@
 			files = (
 				4A51265825B2B5D00047B67D /* ContentView.swift in Sources */,
 				4A6D700825B302AD000EA2FC /* PlacementButton.swift in Sources */,
+<<<<<<< HEAD:Clean SpeakAR Code.xcodeproj/project.pbxproj
+=======
 				4A0B848925B432AC00B81587 /* MusicControlsView.swift in Sources */,
 				4A0B848C25B432D100B81587 /* MusicControlsButton.swift in Sources */,
+>>>>>>> dan-edits:speakAR.xcodeproj/project.pbxproj
 				4A51265625B2B5D00047B67D /* AppDelegate.swift in Sources */,
 				4A6D700425B2F14B000EA2FC /* SpeakerButton.swift in Sources */,
 			);
@@ -301,14 +331,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Clean SpeakAR Code/Preview Content\"";
+<<<<<<< HEAD:Clean SpeakAR Code.xcodeproj/project.pbxproj
+				DEVELOPMENT_TEAM = Z27TRPT2NF;
+=======
 				DEVELOPMENT_TEAM = WZ5RYR2QMJ;
+>>>>>>> dan-edits:speakAR.xcodeproj/project.pbxproj
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Clean SpeakAR Code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD:Clean SpeakAR Code.xcodeproj/project.pbxproj
+				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dann.Clean-SpeakAR-Code";
+=======
 				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dan.Clean-SpeakAR-Code";
+>>>>>>> dan-edits:speakAR.xcodeproj/project.pbxproj
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,14 +360,22 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Clean SpeakAR Code/Preview Content\"";
+<<<<<<< HEAD:Clean SpeakAR Code.xcodeproj/project.pbxproj
+				DEVELOPMENT_TEAM = Z27TRPT2NF;
+=======
 				DEVELOPMENT_TEAM = WZ5RYR2QMJ;
+>>>>>>> dan-edits:speakAR.xcodeproj/project.pbxproj
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Clean SpeakAR Code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+<<<<<<< HEAD:Clean SpeakAR Code.xcodeproj/project.pbxproj
+				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dann.Clean-SpeakAR-Code";
+=======
 				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dan.Clean-SpeakAR-Code";
+>>>>>>> dan-edits:speakAR.xcodeproj/project.pbxproj
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

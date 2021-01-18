@@ -31,6 +31,16 @@
 	<string></string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+<<<<<<< HEAD:Clean SpeakAR Code/Info.plist
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>DannyColor</string>
+		<key>UIImageName</key>
+		<string>Apple Homepod</string>
+	</dict>
+=======
+>>>>>>> dan-edits:speakAR/Info.plist
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
