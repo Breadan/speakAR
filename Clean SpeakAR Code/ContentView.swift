@@ -12,28 +12,21 @@ import ARKit
 struct ContentView : View {
     @State private var isSpeakerSelected = false
     @State private var isSpeakerPlaced = false
-    @State private var isMusicControls = false
     
     var body: some View {
         ZStack(alignment: .bottom) {
             ARViewContainer(isSpeakerPlaced: $isSpeakerPlaced)
                 .edgesIgnoringSafeArea(.all)
-            VStack {
-                MusicControlsButton(isMusicControls: $isMusicControls)
-                
-                if isSpeakerSelected && !isSpeakerPlaced {
-                    PlacementButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
-                }
-                
-                else {
-                    SpeakerButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
-                }
+            
+            if isSpeakerSelected && !isSpeakerPlaced{
+                PlacementButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
             }
-            if isMusicControls {
-                MusicControlsView(isMusicControls: $isMusicControls)
-                    //TODO: transition is only applied when loading in the MusicControlsView. I need there to be transition loading out of MusicControlsView too. Also, why is it stutter-y? transition's not smooth. is the main content view working too hard making it lag or something
-                    .transition(.move(edge: .bottom))
+            
+            else {
+                SpeakerButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
             }
+            
+            
         }
         .edgesIgnoringSafeArea(.all)
     }
@@ -64,14 +57,16 @@ struct ARViewContainer: UIViewRepresentable {
     func updateUIView(_ uiView: ARView, context: Context) {
         if isSpeakerPlaced {
             print("DEBUG: placing speaker now...")
+            do {
+                let model = try Entity.loadModel(named: "Speaker")
+                let clone = model.clone(recursive: true)
 
-            let model = try! Entity.loadModel(named: "Apple")
-            //let clone = model.clone(recursive: true)
-
-            let anchorEntity = AnchorEntity(plane: .any)
-            anchorEntity.addChild(model)
-            uiView.scene.addAnchor(anchorEntity)
-            
+                let anchorEntity = AnchorEntity(plane: .any)
+                anchorEntity.addChild(clone)
+                uiView.scene.addAnchor(anchorEntity)
+            } catch {
+                print("ERROR: LoadModel Error")
+            }
             DispatchQueue.main.async {
                 isSpeakerPlaced = false
             }
