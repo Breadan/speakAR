@@ -13,7 +13,8 @@ struct ContentView : View {
     @State private var isSpeakerSelected = false
     @State private var isSpeakerPlaced = false
     @State private var isMusicControls = false
-    
+    //delete this is useless comment
+    //delete this is useless comment
     var body: some View {
         ZStack(alignment: .bottom) {
             ARViewContainer(isSpeakerPlaced: $isSpeakerPlaced)
