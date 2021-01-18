@@ -19,20 +19,24 @@ struct ContentView : View {
             ARViewContainer(isSpeakerPlaced: $isSpeakerPlaced)
                 .edgesIgnoringSafeArea(.all)
             VStack {
-                MusicControlsButton(isMusicControls: $isMusicControls)
-                
-                if isSpeakerSelected && !isSpeakerPlaced {
-                    PlacementButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
+                if isMusicControls {
+                    MusicControlsView(isMusicControls: $isMusicControls)
+                        //TODO: transition is only applied when loading in the MusicControlsView. I need there to be transition loading out of MusicControlsView too. Also, why is it stutter-y? transition's not smooth. is the main content view working too hard making it lag or something
+                        .transition(.move(edge: .bottom))
+
                 }
-                
                 else {
-                    SpeakerButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
+                    MusicControlsButton(isMusicControls: $isMusicControls)
+                    
+                    if isSpeakerSelected && !isSpeakerPlaced {
+                        PlacementButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
+                    }
+                    
+                    else {
+                        SpeakerButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
+                    }
                 }
-            }
-            if isMusicControls {
-                MusicControlsView(isMusicControls: $isMusicControls)
-                    //TODO: transition is only applied when loading in the MusicControlsView. I need there to be transition loading out of MusicControlsView too. Also, why is it stutter-y? transition's not smooth. is the main content view working too hard making it lag or something
-                    .transition(.move(edge: .bottom))
+                
             }
         }
         .edgesIgnoringSafeArea(.all)
