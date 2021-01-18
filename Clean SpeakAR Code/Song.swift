@@ -30,7 +30,7 @@ class Song {
                 if(!self.isLoaded) {
                     print("ERROR: \(completionError) non-value received on request completion")
                 } else {
-                    print("DEBUG: Request completed, tearing down sink stream...")
+                    print("DEBUG: Request completed, closing stream...")
                 }
                 self.cancellable?.cancel()
                 

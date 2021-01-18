@@ -10,17 +10,18 @@
 		408B568E25B5645A00564D52 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B568D25B5645A00564D52 /* Model.swift */; };
 		40AA309925B564BE006BD006 /* Speaker.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 40AA309825B564BE006BD006 /* Speaker.usdz */; };
 		40AA309F25B56543006BD006 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AA309D25B56543006BD006 /* Song.swift */; };
-		40AA30AE25B5655D006BD006 /* Silk (Favored Nations Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30A325B5655D006BD006 /* Silk (Favored Nations Remix).mp3 */; };
-		40AA30AF25B5655D006BD006 /* sagun - rains.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30A425B5655D006BD006 /* sagun - rains.mp3 */; };
-		40AA30B025B5655D006BD006 /* Hisaishi - Howl's Moving Castle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30A525B5655D006BD006 /* Hisaishi - Howl's Moving Castle.mp3 */; };
-		40AA30B125B5655D006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30A625B5655D006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 */; };
-		40AA30B225B5655D006BD006 /* Uppermost - Beautiful Light.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30A725B5655D006BD006 /* Uppermost - Beautiful Light.mp3 */; };
-		40AA30B325B5655D006BD006 /* Toby Tranter - High Noon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30A825B5655D006BD006 /* Toby Tranter - High Noon.mp3 */; };
-		40AA30B425B5655D006BD006 /* Rayons - From Paradise Past.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30A925B5655D006BD006 /* Rayons - From Paradise Past.mp3 */; };
-		40AA30B525B5655D006BD006 /* Kupla - Friendly Creatures.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30AA25B5655D006BD006 /* Kupla - Friendly Creatures.mp3 */; };
-		40AA30B625B5655D006BD006 /* Evolve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30AB25B5655D006BD006 /* Evolve.mp3 */; };
-		40AA30B725B5655D006BD006 /* Post Malone - Circles (Instrumental).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30AC25B5655D006BD006 /* Post Malone - Circles (Instrumental).mp3 */; };
-		40AA30B825B5655D006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30AD25B5655D006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 */; };
+		40AA30CF25B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C325B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 */; };
+		40AA30D025B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C425B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 */; };
+		40AA30D125B5FC6C006BD006 /* Toby Tranter - High Noon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C525B5FC6C006BD006 /* Toby Tranter - High Noon.mp3 */; };
+		40AA30D225B5FC6C006BD006 /* Rayons - From Paradise Past.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C625B5FC6C006BD006 /* Rayons - From Paradise Past.mp3 */; };
+		40AA30D325B5FC6C006BD006 /* Evolve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C725B5FC6C006BD006 /* Evolve.mp3 */; };
+		40AA30D425B5FC6C006BD006 /* Silk (Favored Nations Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C825B5FC6C006BD006 /* Silk (Favored Nations Remix).mp3 */; };
+		40AA30D525B5FC6C006BD006 /* Uppermost - Beautiful Light.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C925B5FC6C006BD006 /* Uppermost - Beautiful Light.mp3 */; };
+		40AA30D625B5FC6C006BD006 /* Hisaishi - Howl's Moving Castle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30CA25B5FC6C006BD006 /* Hisaishi - Howl's Moving Castle.mp3 */; };
+		40AA30D725B5FC6C006BD006 /* Amsterdam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30CB25B5FC6C006BD006 /* Amsterdam.mp3 */; };
+		40AA30D825B5FC6C006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30CC25B5FC6C006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 */; };
+		40AA30D925B5FC6C006BD006 /* Post Malone - Circles (Instrumental).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30CD25B5FC6C006BD006 /* Post Malone - Circles (Instrumental).mp3 */; };
+		40AA30DA25B5FC6C006BD006 /* sagun - rains.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30CE25B5FC6C006BD006 /* sagun - rains.mp3 */; };
 		4A0B848925B432AC00B81587 /* MusicControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B848825B432AC00B81587 /* MusicControlsView.swift */; };
 		4A0B848C25B432D100B81587 /* MusicControlsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B848B25B432D100B81587 /* MusicControlsButton.swift */; };
 		4A51265625B2B5D00047B67D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A51265525B2B5D00047B67D /* AppDelegate.swift */; };
@@ -37,17 +38,18 @@
 		408B568D25B5645A00564D52 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Model.swift; path = "/Users/breadan/Documents/XCode/speakAR/Clean SpeakAR Code/Model.swift"; sourceTree = "<absolute>"; };
 		40AA309825B564BE006BD006 /* Speaker.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Speaker.usdz; path = ../../../../../Desktop/Models/Speaker.usdz; sourceTree = "<group>"; };
 		40AA309D25B56543006BD006 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		40AA30A325B5655D006BD006 /* Silk (Favored Nations Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Silk (Favored Nations Remix).mp3"; path = "Clean SpeakAR Code/Sounds/Silk (Favored Nations Remix).mp3"; sourceTree = SOURCE_ROOT; };
-		40AA30A425B5655D006BD006 /* sagun - rains.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sagun - rains.mp3"; path = "Clean SpeakAR Code/Sounds/sagun - rains.mp3"; sourceTree = SOURCE_ROOT; };
-		40AA30A525B5655D006BD006 /* Hisaishi - Howl's Moving Castle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Hisaishi - Howl's Moving Castle.mp3"; path = "Clean SpeakAR Code/Sounds/Hisaishi - Howl's Moving Castle.mp3"; sourceTree = SOURCE_ROOT; };
-		40AA30A625B5655D006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "SF & KMcE - Sunrise On Southey Street.mp3"; path = "Clean SpeakAR Code/Sounds/SF & KMcE - Sunrise On Southey Street.mp3"; sourceTree = SOURCE_ROOT; };
-		40AA30A725B5655D006BD006 /* Uppermost - Beautiful Light.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Uppermost - Beautiful Light.mp3"; path = "Clean SpeakAR Code/Sounds/Uppermost - Beautiful Light.mp3"; sourceTree = SOURCE_ROOT; };
-		40AA30A825B5655D006BD006 /* Toby Tranter - High Noon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Toby Tranter - High Noon.mp3"; path = "Clean SpeakAR Code/Sounds/Toby Tranter - High Noon.mp3"; sourceTree = SOURCE_ROOT; };
-		40AA30A925B5655D006BD006 /* Rayons - From Paradise Past.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Rayons - From Paradise Past.mp3"; path = "Clean SpeakAR Code/Sounds/Rayons - From Paradise Past.mp3"; sourceTree = SOURCE_ROOT; };
-		40AA30AA25B5655D006BD006 /* Kupla - Friendly Creatures.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Kupla - Friendly Creatures.mp3"; path = "Clean SpeakAR Code/Sounds/Kupla - Friendly Creatures.mp3"; sourceTree = SOURCE_ROOT; };
-		40AA30AB25B5655D006BD006 /* Evolve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Evolve.mp3; path = "Clean SpeakAR Code/Sounds/Evolve.mp3"; sourceTree = SOURCE_ROOT; };
-		40AA30AC25B5655D006BD006 /* Post Malone - Circles (Instrumental).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Post Malone - Circles (Instrumental).mp3"; path = "Clean SpeakAR Code/Sounds/Post Malone - Circles (Instrumental).mp3"; sourceTree = SOURCE_ROOT; };
-		40AA30AD25B5655D006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "[ City Your City & Frasco ] Micro Summer.mp3"; path = "Clean SpeakAR Code/Sounds/[ City Your City & Frasco ] Micro Summer.mp3"; sourceTree = SOURCE_ROOT; };
+		40AA30C325B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Kupla - Friendly Creatures.mp3"; sourceTree = "<group>"; };
+		40AA30C425B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SF & KMcE - Sunrise On Southey Street.mp3"; sourceTree = "<group>"; };
+		40AA30C525B5FC6C006BD006 /* Toby Tranter - High Noon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Toby Tranter - High Noon.mp3"; sourceTree = "<group>"; };
+		40AA30C625B5FC6C006BD006 /* Rayons - From Paradise Past.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rayons - From Paradise Past.mp3"; sourceTree = "<group>"; };
+		40AA30C725B5FC6C006BD006 /* Evolve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Evolve.mp3; sourceTree = "<group>"; };
+		40AA30C825B5FC6C006BD006 /* Silk (Favored Nations Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Silk (Favored Nations Remix).mp3"; sourceTree = "<group>"; };
+		40AA30C925B5FC6C006BD006 /* Uppermost - Beautiful Light.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Uppermost - Beautiful Light.mp3"; sourceTree = "<group>"; };
+		40AA30CA25B5FC6C006BD006 /* Hisaishi - Howl's Moving Castle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hisaishi - Howl's Moving Castle.mp3"; sourceTree = "<group>"; };
+		40AA30CB25B5FC6C006BD006 /* Amsterdam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Amsterdam.mp3; sourceTree = "<group>"; };
+		40AA30CC25B5FC6C006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "[ City Your City & Frasco ] Micro Summer.mp3"; sourceTree = "<group>"; };
+		40AA30CD25B5FC6C006BD006 /* Post Malone - Circles (Instrumental).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Post Malone - Circles (Instrumental).mp3"; sourceTree = "<group>"; };
+		40AA30CE25B5FC6C006BD006 /* sagun - rains.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sagun - rains.mp3"; sourceTree = "<group>"; };
 		4A0B848825B432AC00B81587 /* MusicControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlsView.swift; sourceTree = "<group>"; };
 		4A0B848B25B432D100B81587 /* MusicControlsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlsButton.swift; sourceTree = "<group>"; };
 		4A51265225B2B5D00047B67D /* Clean SpeakAR Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clean SpeakAR Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,17 +78,18 @@
 		40AA30A225B5654F006BD006 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				40AA30AD25B5655D006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 */,
-				40AA30AB25B5655D006BD006 /* Evolve.mp3 */,
-				40AA30A525B5655D006BD006 /* Hisaishi - Howl's Moving Castle.mp3 */,
-				40AA30AA25B5655D006BD006 /* Kupla - Friendly Creatures.mp3 */,
-				40AA30AC25B5655D006BD006 /* Post Malone - Circles (Instrumental).mp3 */,
-				40AA30A925B5655D006BD006 /* Rayons - From Paradise Past.mp3 */,
-				40AA30A425B5655D006BD006 /* sagun - rains.mp3 */,
-				40AA30A625B5655D006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 */,
-				40AA30A325B5655D006BD006 /* Silk (Favored Nations Remix).mp3 */,
-				40AA30A825B5655D006BD006 /* Toby Tranter - High Noon.mp3 */,
-				40AA30A725B5655D006BD006 /* Uppermost - Beautiful Light.mp3 */,
+				40AA30CC25B5FC6C006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 */,
+				40AA30CB25B5FC6C006BD006 /* Amsterdam.mp3 */,
+				40AA30C725B5FC6C006BD006 /* Evolve.mp3 */,
+				40AA30CA25B5FC6C006BD006 /* Hisaishi - Howl's Moving Castle.mp3 */,
+				40AA30C325B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 */,
+				40AA30CD25B5FC6C006BD006 /* Post Malone - Circles (Instrumental).mp3 */,
+				40AA30C625B5FC6C006BD006 /* Rayons - From Paradise Past.mp3 */,
+				40AA30CE25B5FC6C006BD006 /* sagun - rains.mp3 */,
+				40AA30C425B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 */,
+				40AA30C825B5FC6C006BD006 /* Silk (Favored Nations Remix).mp3 */,
+				40AA30C525B5FC6C006BD006 /* Toby Tranter - High Noon.mp3 */,
+				40AA30C925B5FC6C006BD006 /* Uppermost - Beautiful Light.mp3 */,
 			);
 			path = Songs;
 			sourceTree = "<group>";
@@ -202,22 +205,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40AA30AE25B5655D006BD006 /* Silk (Favored Nations Remix).mp3 in Resources */,
-				40AA30B725B5655D006BD006 /* Post Malone - Circles (Instrumental).mp3 in Resources */,
 				4A51265F25B2B5D20047B67D /* Preview Assets.xcassets in Resources */,
-				40AA30B325B5655D006BD006 /* Toby Tranter - High Noon.mp3 in Resources */,
+				40AA30D925B5FC6C006BD006 /* Post Malone - Circles (Instrumental).mp3 in Resources */,
+				40AA30D625B5FC6C006BD006 /* Hisaishi - Howl's Moving Castle.mp3 in Resources */,
 				4A6D700E25B30F9A000EA2FC /* Apple.usdc in Resources */,
 				4A6D700125B2BA36000EA2FC /* Apple Homepod.usd in Resources */,
-				40AA30B125B5655D006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 in Resources */,
-				40AA30B525B5655D006BD006 /* Kupla - Friendly Creatures.mp3 in Resources */,
-				40AA30B825B5655D006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 in Resources */,
-				40AA30B025B5655D006BD006 /* Hisaishi - Howl's Moving Castle.mp3 in Resources */,
+				40AA30D325B5FC6C006BD006 /* Evolve.mp3 in Resources */,
+				40AA30DA25B5FC6C006BD006 /* sagun - rains.mp3 in Resources */,
+				40AA30D225B5FC6C006BD006 /* Rayons - From Paradise Past.mp3 in Resources */,
+				40AA30D025B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 in Resources */,
+				40AA30D525B5FC6C006BD006 /* Uppermost - Beautiful Light.mp3 in Resources */,
+				40AA30D825B5FC6C006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 in Resources */,
 				40AA309925B564BE006BD006 /* Speaker.usdz in Resources */,
 				4A51265C25B2B5D20047B67D /* Assets.xcassets in Resources */,
-				40AA30B425B5655D006BD006 /* Rayons - From Paradise Past.mp3 in Resources */,
-				40AA30AF25B5655D006BD006 /* sagun - rains.mp3 in Resources */,
-				40AA30B625B5655D006BD006 /* Evolve.mp3 in Resources */,
-				40AA30B225B5655D006BD006 /* Uppermost - Beautiful Light.mp3 in Resources */,
+				40AA30D425B5FC6C006BD006 /* Silk (Favored Nations Remix).mp3 in Resources */,
+				40AA30CF25B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 in Resources */,
+				40AA30D125B5FC6C006BD006 /* Toby Tranter - High Noon.mp3 in Resources */,
+				40AA30D725B5FC6C006BD006 /* Amsterdam.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
