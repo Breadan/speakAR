@@ -32,7 +32,7 @@
 		4A51265825B2B5D00047B67D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A51265725B2B5D00047B67D /* ContentView.swift */; };
 		4A51265C25B2B5D20047B67D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A51265B25B2B5D20047B67D /* Assets.xcassets */; };
 		4A51265F25B2B5D20047B67D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A51265E25B2B5D20047B67D /* Preview Assets.xcassets */; };
-		4A687DE625B67DBE001C741E /* CurrentSongThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A687DE525B67DBE001C741E /* CurrentSongThumbnail.swift */; };
+		4A5FA59925B68E7600041B22 /* CurrentSongThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5FA59825B68E7600041B22 /* CurrentSongThumbnail.swift */; };
 		4A6994A425B67BDE00F5F32D /* SongSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6994A325B67BDE00F5F32D /* SongSearchBar.swift */; };
 		4A6D700125B2BA36000EA2FC /* Apple Homepod.usd in Resources */ = {isa = PBXBuildFile; fileRef = 4A6D700025B2BA36000EA2FC /* Apple Homepod.usd */; };
 		4A6D700425B2F14B000EA2FC /* SpeakerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D700325B2F14B000EA2FC /* SpeakerButton.swift */; };
@@ -70,7 +70,7 @@
 		4A51265B25B2B5D20047B67D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A51265E25B2B5D20047B67D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A51266025B2B5D30047B67D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A687DE525B67DBE001C741E /* CurrentSongThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrentSongThumbnail.swift; path = ../../../../../../../../../../Documents/CurrentSongThumbnail.swift; sourceTree = "<group>"; };
+		4A5FA59825B68E7600041B22 /* CurrentSongThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentSongThumbnail.swift; sourceTree = "<group>"; };
 		4A6994A325B67BDE00F5F32D /* SongSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongSearchBar.swift; sourceTree = "<group>"; };
 		4A6D700025B2BA36000EA2FC /* Apple Homepod.usd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apple Homepod.usd"; sourceTree = "<group>"; };
 		4A6D700325B2F14B000EA2FC /* SpeakerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerButton.swift; sourceTree = "<group>"; };
@@ -180,9 +180,9 @@
 			isa = PBXGroup;
 			children = (
 				4A0B848B25B432D100B81587 /* MusicControlsButton.swift */,
+				4A5FA59825B68E7600041B22 /* CurrentSongThumbnail.swift */,
 				4A0B848825B432AC00B81587 /* MusicControlsView.swift */,
 				4A6994A325B67BDE00F5F32D /* SongSearchBar.swift */,
-				4A687DE525B67DBE001C741E /* CurrentSongThumbnail.swift */,
 				4A48B1C225B67E970044AFB0 /* SongTitle.swift */,
 				4A48B1C525B67EBA0044AFB0 /* ProgressBar.swift */,
 				4A48B1C825B67F230044AFB0 /* SongController.swift */,
@@ -299,13 +299,13 @@
 				4A51265825B2B5D00047B67D /* ContentView.swift in Sources */,
 				4A6994A425B67BDE00F5F32D /* SongSearchBar.swift in Sources */,
 				4A6D700825B302AD000EA2FC /* PlacementButton.swift in Sources */,
+				4A5FA59925B68E7600041B22 /* CurrentSongThumbnail.swift in Sources */,
 				4A48B1C325B67E970044AFB0 /* SongTitle.swift in Sources */,
 				4A0B848925B432AC00B81587 /* MusicControlsView.swift in Sources */,
 				4A48B1CF25B680C50044AFB0 /* ExpandLyrics.swift in Sources */,
 				40AA309F25B56543006BD006 /* Song.swift in Sources */,
 				4A0B848C25B432D100B81587 /* MusicControlsButton.swift in Sources */,
 				4A51265625B2B5D00047B67D /* AppDelegate.swift in Sources */,
-				4A687DE625B67DBE001C741E /* CurrentSongThumbnail.swift in Sources */,
 				4A48B1CC25B680940044AFB0 /* Lyrics.swift in Sources */,
 				4A6D700425B2F14B000EA2FC /* SpeakerButton.swift in Sources */,
 				4A48B1D225B680DA0044AFB0 /* SongList.swift in Sources */,
