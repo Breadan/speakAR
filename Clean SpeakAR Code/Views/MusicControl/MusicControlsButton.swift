@@ -11,9 +11,7 @@ struct MusicControlsButton: View {
     @Binding var isMusicControls: Bool
     
     var body: some View {
-        HStack {
-            Spacer()
-            
+        
             ZStack {
                 Color.black.opacity(0.25)
                 
@@ -32,7 +30,4 @@ struct MusicControlsButton: View {
             .frame(width: 75, height: 75)
             .cornerRadius(8)
         }
-        .padding(.top, 45)
-        .padding(.trailing, 20)
     }
-}

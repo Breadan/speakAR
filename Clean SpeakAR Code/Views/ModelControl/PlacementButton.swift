@@ -12,8 +12,9 @@ struct PlacementButton: View {
     @Binding var isSpeakerPlaced: Bool
     
     var body: some View {
-        VStack {
-            Spacer()
+        
+//place this in v stack, contentview        .padding(.bottom, 50)
+//        VStack {
             HStack {
                 // Cancel button
                 Button(action: {
@@ -41,9 +42,8 @@ struct PlacementButton: View {
                         .cornerRadius(30)
                         .padding(20)
                 }
-
             }
-        }
-        .padding(.bottom, 50)
+//        }
+//        .padding(.bottom, 50)
     }
 }

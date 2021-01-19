@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		408B568E25B5645A00564D52 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408B568D25B5645A00564D52 /* Model.swift */; };
-		40AA309925B564BE006BD006 /* Speaker.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 40AA309825B564BE006BD006 /* Speaker.usdz */; };
 		40AA309F25B56543006BD006 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AA309D25B56543006BD006 /* Song.swift */; };
 		40AA30CF25B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C325B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 */; };
 		40AA30D025B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C425B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 */; };
@@ -24,19 +22,27 @@
 		40AA30DA25B5FC6C006BD006 /* sagun - rains.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30CE25B5FC6C006BD006 /* sagun - rains.mp3 */; };
 		4A0B848925B432AC00B81587 /* MusicControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B848825B432AC00B81587 /* MusicControlsView.swift */; };
 		4A0B848C25B432D100B81587 /* MusicControlsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B848B25B432D100B81587 /* MusicControlsButton.swift */; };
+		4A48B1C325B67E970044AFB0 /* SongTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1C225B67E970044AFB0 /* SongTitle.swift */; };
+		4A48B1C625B67EBA0044AFB0 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1C525B67EBA0044AFB0 /* ProgressBar.swift */; };
+		4A48B1C925B67F230044AFB0 /* SongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1C825B67F230044AFB0 /* SongController.swift */; };
+		4A48B1CC25B680940044AFB0 /* Lyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1CB25B680940044AFB0 /* Lyrics.swift */; };
+		4A48B1CF25B680C50044AFB0 /* ExpandLyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1CE25B680C50044AFB0 /* ExpandLyrics.swift */; };
+		4A48B1D225B680DA0044AFB0 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1D125B680DA0044AFB0 /* SongList.swift */; };
 		4A51265625B2B5D00047B67D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A51265525B2B5D00047B67D /* AppDelegate.swift */; };
 		4A51265825B2B5D00047B67D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A51265725B2B5D00047B67D /* ContentView.swift */; };
 		4A51265C25B2B5D20047B67D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A51265B25B2B5D20047B67D /* Assets.xcassets */; };
 		4A51265F25B2B5D20047B67D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A51265E25B2B5D20047B67D /* Preview Assets.xcassets */; };
+		4A687DE625B67DBE001C741E /* CurrentSongThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A687DE525B67DBE001C741E /* CurrentSongThumbnail.swift */; };
+		4A6994A425B67BDE00F5F32D /* SongSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6994A325B67BDE00F5F32D /* SongSearchBar.swift */; };
 		4A6D700125B2BA36000EA2FC /* Apple Homepod.usd in Resources */ = {isa = PBXBuildFile; fileRef = 4A6D700025B2BA36000EA2FC /* Apple Homepod.usd */; };
 		4A6D700425B2F14B000EA2FC /* SpeakerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D700325B2F14B000EA2FC /* SpeakerButton.swift */; };
 		4A6D700825B302AD000EA2FC /* PlacementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D700725B302AD000EA2FC /* PlacementButton.swift */; };
 		4A6D700E25B30F9A000EA2FC /* Apple.usdc in Resources */ = {isa = PBXBuildFile; fileRef = 4A6D700D25B30F99000EA2FC /* Apple.usdc */; };
+		4ABF11CF25B66AB100550AE9 /* Speaker.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 4ABF11CE25B66AB100550AE9 /* Speaker.usdz */; };
+		4AD1DD6E25B65A2900CAF3A6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD1DD6D25B65A2900CAF3A6 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		408B568D25B5645A00564D52 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Model.swift; path = "/Users/breadan/Documents/XCode/speakAR/Clean SpeakAR Code/Model.swift"; sourceTree = "<absolute>"; };
-		40AA309825B564BE006BD006 /* Speaker.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Speaker.usdz; path = ../../../../../Desktop/Models/Speaker.usdz; sourceTree = "<group>"; };
 		40AA309D25B56543006BD006 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		40AA30C325B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Kupla - Friendly Creatures.mp3"; sourceTree = "<group>"; };
 		40AA30C425B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SF & KMcE - Sunrise On Southey Street.mp3"; sourceTree = "<group>"; };
@@ -52,16 +58,26 @@
 		40AA30CE25B5FC6C006BD006 /* sagun - rains.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sagun - rains.mp3"; sourceTree = "<group>"; };
 		4A0B848825B432AC00B81587 /* MusicControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlsView.swift; sourceTree = "<group>"; };
 		4A0B848B25B432D100B81587 /* MusicControlsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlsButton.swift; sourceTree = "<group>"; };
+		4A48B1C225B67E970044AFB0 /* SongTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTitle.swift; sourceTree = "<group>"; };
+		4A48B1C525B67EBA0044AFB0 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		4A48B1C825B67F230044AFB0 /* SongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongController.swift; sourceTree = "<group>"; };
+		4A48B1CB25B680940044AFB0 /* Lyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lyrics.swift; sourceTree = "<group>"; };
+		4A48B1CE25B680C50044AFB0 /* ExpandLyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandLyrics.swift; sourceTree = "<group>"; };
+		4A48B1D125B680DA0044AFB0 /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		4A51265225B2B5D00047B67D /* Clean SpeakAR Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clean SpeakAR Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A51265525B2B5D00047B67D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A51265725B2B5D00047B67D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4A51265B25B2B5D20047B67D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A51265E25B2B5D20047B67D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A51266025B2B5D30047B67D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A687DE525B67DBE001C741E /* CurrentSongThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrentSongThumbnail.swift; path = ../../../../../../../../../../Documents/CurrentSongThumbnail.swift; sourceTree = "<group>"; };
+		4A6994A325B67BDE00F5F32D /* SongSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongSearchBar.swift; sourceTree = "<group>"; };
 		4A6D700025B2BA36000EA2FC /* Apple Homepod.usd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Apple Homepod.usd"; sourceTree = "<group>"; };
 		4A6D700325B2F14B000EA2FC /* SpeakerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerButton.swift; sourceTree = "<group>"; };
 		4A6D700725B302AD000EA2FC /* PlacementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButton.swift; sourceTree = "<group>"; };
 		4A6D700D25B30F99000EA2FC /* Apple.usdc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Apple.usdc; sourceTree = "<group>"; };
+		4ABF11CE25B66AB100550AE9 /* Speaker.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Speaker.usdz; sourceTree = "<group>"; };
+		4AD1DD6D25B65A2900CAF3A6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Model.swift; path = "/Users/danieljung/Google Drive/Personal/Coding/xCode/Bread&Dan/Spatial Speaker/speakAR/Clean SpeakAR Code/Model.swift"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,14 +129,9 @@
 		4A51265425B2B5D00047B67D /* Clean SpeakAR Code */ = {
 			isa = PBXGroup;
 			children = (
-				40AA309D25B56543006BD006 /* Song.swift */,
-				408B568D25B5645A00564D52 /* Model.swift */,
 				4A51265525B2B5D00047B67D /* AppDelegate.swift */,
-				4A51265725B2B5D00047B67D /* ContentView.swift */,
-				4A6D700325B2F14B000EA2FC /* SpeakerButton.swift */,
-				4A6D700725B302AD000EA2FC /* PlacementButton.swift */,
-				4A0B848B25B432D100B81587 /* MusicControlsButton.swift */,
-				4A0B848825B432AC00B81587 /* MusicControlsView.swift */,
+				4A6994A025B67AEF00F5F32D /* Views */,
+				4A69949E25B67AB900F5F32D /* Helpers */,
 				4A51265B25B2B5D20047B67D /* Assets.xcassets */,
 				4A51266025B2B5D30047B67D /* Info.plist */,
 				4A6D6FFF25B2BA1B000EA2FC /* Models */,
@@ -138,10 +149,63 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4A69949E25B67AB900F5F32D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4A69949F25B67AC500F5F32D /* ResourceLoaders */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4A69949F25B67AC500F5F32D /* ResourceLoaders */ = {
+			isa = PBXGroup;
+			children = (
+				40AA309D25B56543006BD006 /* Song.swift */,
+				4AD1DD6D25B65A2900CAF3A6 /* Model.swift */,
+			);
+			path = ResourceLoaders;
+			sourceTree = "<group>";
+		};
+		4A6994A025B67AEF00F5F32D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A51265725B2B5D00047B67D /* ContentView.swift */,
+				4A6994A225B67B0A00F5F32D /* ModelControl */,
+				4A6994A125B67AFC00F5F32D /* MusicControl */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A6994A125B67AFC00F5F32D /* MusicControl */ = {
+			isa = PBXGroup;
+			children = (
+				4A0B848B25B432D100B81587 /* MusicControlsButton.swift */,
+				4A0B848825B432AC00B81587 /* MusicControlsView.swift */,
+				4A6994A325B67BDE00F5F32D /* SongSearchBar.swift */,
+				4A687DE525B67DBE001C741E /* CurrentSongThumbnail.swift */,
+				4A48B1C225B67E970044AFB0 /* SongTitle.swift */,
+				4A48B1C525B67EBA0044AFB0 /* ProgressBar.swift */,
+				4A48B1C825B67F230044AFB0 /* SongController.swift */,
+				4A48B1CB25B680940044AFB0 /* Lyrics.swift */,
+				4A48B1CE25B680C50044AFB0 /* ExpandLyrics.swift */,
+				4A48B1D125B680DA0044AFB0 /* SongList.swift */,
+			);
+			path = MusicControl;
+			sourceTree = "<group>";
+		};
+		4A6994A225B67B0A00F5F32D /* ModelControl */ = {
+			isa = PBXGroup;
+			children = (
+				4A6D700725B302AD000EA2FC /* PlacementButton.swift */,
+				4A6D700325B2F14B000EA2FC /* SpeakerButton.swift */,
+			);
+			path = ModelControl;
+			sourceTree = "<group>";
+		};
 		4A6D6FFF25B2BA1B000EA2FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				40AA309825B564BE006BD006 /* Speaker.usdz */,
+				4ABF11CE25B66AB100550AE9 /* Speaker.usdz */,
 				4A6D700D25B30F99000EA2FC /* Apple.usdc */,
 				4A6D700025B2BA36000EA2FC /* Apple Homepod.usd */,
 			);
@@ -207,6 +271,7 @@
 			files = (
 				4A51265F25B2B5D20047B67D /* Preview Assets.xcassets in Resources */,
 				40AA30D925B5FC6C006BD006 /* Post Malone - Circles (Instrumental).mp3 in Resources */,
+				4ABF11CF25B66AB100550AE9 /* Speaker.usdz in Resources */,
 				40AA30D625B5FC6C006BD006 /* Hisaishi - Howl's Moving Castle.mp3 in Resources */,
 				4A6D700E25B30F9A000EA2FC /* Apple.usdc in Resources */,
 				4A6D700125B2BA36000EA2FC /* Apple Homepod.usd in Resources */,
@@ -216,7 +281,6 @@
 				40AA30D025B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 in Resources */,
 				40AA30D525B5FC6C006BD006 /* Uppermost - Beautiful Light.mp3 in Resources */,
 				40AA30D825B5FC6C006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 in Resources */,
-				40AA309925B564BE006BD006 /* Speaker.usdz in Resources */,
 				4A51265C25B2B5D20047B67D /* Assets.xcassets in Resources */,
 				40AA30D425B5FC6C006BD006 /* Silk (Favored Nations Remix).mp3 in Resources */,
 				40AA30CF25B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 in Resources */,
@@ -232,14 +296,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				408B568E25B5645A00564D52 /* Model.swift in Sources */,
 				4A51265825B2B5D00047B67D /* ContentView.swift in Sources */,
+				4A6994A425B67BDE00F5F32D /* SongSearchBar.swift in Sources */,
 				4A6D700825B302AD000EA2FC /* PlacementButton.swift in Sources */,
+				4A48B1C325B67E970044AFB0 /* SongTitle.swift in Sources */,
 				4A0B848925B432AC00B81587 /* MusicControlsView.swift in Sources */,
+				4A48B1CF25B680C50044AFB0 /* ExpandLyrics.swift in Sources */,
 				40AA309F25B56543006BD006 /* Song.swift in Sources */,
 				4A0B848C25B432D100B81587 /* MusicControlsButton.swift in Sources */,
 				4A51265625B2B5D00047B67D /* AppDelegate.swift in Sources */,
+				4A687DE625B67DBE001C741E /* CurrentSongThumbnail.swift in Sources */,
+				4A48B1CC25B680940044AFB0 /* Lyrics.swift in Sources */,
 				4A6D700425B2F14B000EA2FC /* SpeakerButton.swift in Sources */,
+				4A48B1D225B680DA0044AFB0 /* SongList.swift in Sources */,
+				4A48B1C625B67EBA0044AFB0 /* ProgressBar.swift in Sources */,
+				4AD1DD6E25B65A2900CAF3A6 /* Model.swift in Sources */,
+				4A48B1C925B67F230044AFB0 /* SongController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,14 +441,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Clean SpeakAR Code/Preview Content\"";
-				DEVELOPMENT_TEAM = Z27TRPT2NF;
+				DEVELOPMENT_TEAM = WZ5RYR2QMJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Clean SpeakAR Code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dann.Clean-SpeakAR-Code";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dan.Clean-SpeakAR-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -390,14 +462,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Clean SpeakAR Code/Preview Content\"";
-				DEVELOPMENT_TEAM = Z27TRPT2NF;
+				DEVELOPMENT_TEAM = WZ5RYR2QMJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Clean SpeakAR Code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dann.Clean-SpeakAR-Code";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dan.Clean-SpeakAR-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

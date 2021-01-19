@@ -11,9 +11,11 @@ struct SpeakerButton: View {
     @Binding var isSpeakerSelected: Bool
     @Binding var isSpeakerPlaced: Bool
     
+    // put this in content view, to the V stack later       .padding(.bottom, 50)
+
+    
     var body: some View {
-        VStack {
-            Spacer()
+//        VStack {
             Button(action: {
                 isSpeakerSelected = true
                 print("DEBUG: Speaker button pressed")
@@ -26,7 +28,7 @@ struct SpeakerButton: View {
                     .overlay(Circle().stroke(Color.white, lineWidth: 4))
                     .shadow(radius: 7)
             }
-        }
-        .padding(.bottom, 50)
+//        }
+//        .padding(.bottom, 50)
     }
 }

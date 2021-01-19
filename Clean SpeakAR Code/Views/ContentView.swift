@@ -20,7 +20,7 @@ struct ContentView : View {
     @State private var isSpeakerPlaced = false
     @State private var isMusicControls = false
     
-    private static var resourceLoadStrat = loadStrat.realTime
+    private static var resourceLoadStrat = loadStrat.onAppLaunch
     
     // Setting our stored property to the closure's returned value, NOT the actual closure itself (i.e., we called the closure using the '()' function notation to RETURN value)
     private var models: Model? = { () -> Model in
@@ -72,17 +72,23 @@ struct ContentView : View {
                     MusicControlsView(isMusicControls: $isMusicControls)
                         //TODO: transition is only applied when loading in the MusicControlsView. I need there to be transition loading out of MusicControlsView too. Also, why is it stutter-y? transition's not smooth. is the main content view working too hard making it lag or something
                         .transition(.move(edge: .bottom))
-
                 }
                 else {
-                    MusicControlsButton(isMusicControls: $isMusicControls)
-                    
+                    HStack {
+                        Spacer()
+                        MusicControlsButton(isMusicControls: $isMusicControls)
+                            .padding(.top, 45)
+                            .padding(.trailing, 20)
+                    }
+                    Spacer()
                     if isSpeakerSelected && !isSpeakerPlaced {
                         PlacementButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
+                            .padding(.bottom, 50)
                     }
                     
                     else {
-                        SpeakerButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
+                            SpeakerButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
+                                .padding(.bottom, 50)
                     }
                 }
                 
