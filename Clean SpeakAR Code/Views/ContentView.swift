@@ -67,6 +67,8 @@ struct ContentView : View {
         ZStack(alignment: .bottom) {
             ARViewContainer(isSpeakerPlaced: $isSpeakerPlaced, resourceLoadStrat: ContentView.resourceLoadStrat, speakerModels: models, speakerSongs: $songs)
                 .edgesIgnoringSafeArea(.all)
+                .blur(radius: (isMusicControls ? 15 : 0))
+            
             VStack {
                 if isMusicControls {
                     MusicControlsView(isMusicControls: $isMusicControls)

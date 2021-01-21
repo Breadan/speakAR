@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SongList: View {
+struct SongListView: View {
     var body: some View {
         
         VStack(spacing: 20) {
