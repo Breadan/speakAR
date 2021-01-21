@@ -13,6 +13,7 @@ struct SongTitle: View {
             print("DEBUG: song title selected")
         }) {
             Text("song title")
+                .foregroundColor(Color.black)
         }
     }
 }

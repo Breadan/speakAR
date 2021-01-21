@@ -22,8 +22,8 @@ struct SpeakerButton: View {
             }) {
                     Image("Apple Homepod")
                     .resizable()
-                    .frame(height: 100)
-                    .aspectRatio(1/1, contentMode: .fit)
+                        .frame(width: 100, height: 100)
+                        .aspectRatio(1/1, contentMode: .fit)
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.white, lineWidth: 4))
                     .shadow(radius: 7)

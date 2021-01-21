@@ -9,10 +9,13 @@ import SwiftUI
 
 struct SongList: View {
     var body: some View {
-        Button(action: {
-            print("DEBUG: SongList selected")
-        }) {
-            Text("Song List")
+        
+        VStack(spacing: 20) {
+            ForEach(0..<30) {
+                Text("Song number \($0)")
+            }
         }
+        .frame(maxWidth: .infinity)
+        .background(Color.black.opacity(0.25))
     }
 }

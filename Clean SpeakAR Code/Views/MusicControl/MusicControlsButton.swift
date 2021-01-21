@@ -19,7 +19,7 @@ struct MusicControlsButton: View {
                     withAnimation {
                         isMusicControls.toggle()
                     }
-                    print("DEBUG: MusicControlsButton toggled \(isMusicControls.self)")
+                    print("DEBUG: MusicControlsButton toggled")
                 }) {
                     Image(systemName: "music.note.house")
                         .font(.system(size: 50))

@@ -9,10 +9,19 @@ import SwiftUI
 
 struct ProgressBar: View {
     var body: some View {
-        Button(action: {
-            print("DEBUG: progress bar selected")
-        }) {
-            Text("Progress Bar")
+        
+        ZStack(alignment: .leading) {
+           Rectangle()
+              .foregroundColor(Color.gray)
+              .opacity(0.3)
+              .frame(height: 4.0)
+           Rectangle()
+              .foregroundColor(Color.blue)
+            .frame(width: 30, height: 4.0)
+        }
+        .cornerRadius(4.0)
+        .onTapGesture {
+            print("DEBUG: selected progress bar")
         }
     }
 }
