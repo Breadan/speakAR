@@ -10,15 +10,15 @@ import SwiftUI
 struct CurrentSongThumbnail: View {
     var body: some View {
         
-            Image("Apple Homepod")
+            Image("Music Thumbnail")
                 .resizable()
                 .frame(width:171.6, height: 171.6)
                 .cornerRadius(8)
 
                 .onTapGesture {
-                    print("tapped on Current Song Thumbnail")
+                    print("DEBUG: Thumbnail tapped")
         }
                 //only for testing purposes. remove later.
-                .background(Color.black.opacity(0.25))
+                .background(Color.black.opacity(0.50))
     }
 }

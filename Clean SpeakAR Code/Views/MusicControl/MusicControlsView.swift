@@ -9,15 +9,16 @@ import SwiftUI
 
 struct MusicControlsView: View {
     @Binding var isMusicControls: Bool
+    @Binding var songs: [String:Song]
+    @Binding var songsQueue: (loadedSongURLs: [String], queueIndex: Int?)
+    @Binding var isPlaying: Bool
     
     var body: some View {
         ZStack {
               VStack {
                   HStack {
-                      SongSearchBar(text: .constant(""))
-                      
-                      Spacer()
-                      
+                    SongSearchBar(text: .constant(""))
+                    Spacer()
                     MusicControlsButton(isMusicControls: $isMusicControls)
                   }
                   .padding(.top, 45)
@@ -31,25 +32,28 @@ struct MusicControlsView: View {
                       Spacer()
                           VStack {
                             Spacer()
-                              SongTitle()
-                              ProgressBar()
-                                  .padding(.top, 10)
-                                  .padding(.bottom, 10)
-                                  SongController()
+                            SongTitle(songsQueue: songsQueue)
+                            ProgressBar(songsQueue: songsQueue)
+                                .padding(.top, 10)
+                                .padding(.bottom, 10)
+                            
+                            SongControls(songsQueue: $songsQueue, isPlaying: $isPlaying)
+                            
                             Spacer()
 
                           }
-                          .background(Color.black.opacity(0.25))
+                          .background(Color.black.opacity(0.50))
                           .frame(width: 171.6, height:171.6)
                           .cornerRadius(8)
 
                   }
                   .padding(.bottom, 25)
                   .padding(.horizontal, 25)
-                  
-                ScrollView(.vertical) {
-                    SongList()
-                }
+                
+             
+                Songlist(isMusicControls: $isMusicControls, songs: $songs, songsQueue: $songsQueue)
+                
+                
                 .padding(.horizontal, 25)
                 .padding(.bottom, 45)
                 .cornerRadius(8)
@@ -57,7 +61,9 @@ struct MusicControlsView: View {
               }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-//          .background(Color.red)
         .edgesIgnoringSafeArea(.all)
     }
+    
 }
+
+
