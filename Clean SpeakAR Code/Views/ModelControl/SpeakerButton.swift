@@ -20,7 +20,7 @@ struct SpeakerButton: View {
                 isSpeakerSelected = true
                 print("DEBUG: Speaker button pressed")
             }) {
-                    Image("Apple Homepod")
+                Image(systemName: "hammer.fill")
                     .resizable()
                         .frame(width: 100, height: 100)
                         .aspectRatio(1/1, contentMode: .fit)

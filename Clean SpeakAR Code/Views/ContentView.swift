@@ -13,6 +13,7 @@ import Combine
 struct ContentView : View {
     // These private instance variables all initialize once on app launch
     @State private var isSpeakerSelected = false
+    @State private var isSpeakerConfirmed = false
     @State private var isSpeakerPlaced = false
     @State private var isMusicControls = false
     
@@ -22,13 +23,14 @@ struct ContentView : View {
         return model
     }()
     
+    @State private var audioController: AudioPlaybackController? = nil
     @State private var songs: [String:Song] = loadSongList()
     @State private var songsQueue: (loadedSongURLs: [String], queueIndex: Int?) = ([], nil)
     @State private var isPlaying: Bool = false
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            ARViewContainer(isSpeakerPlaced: $isSpeakerPlaced, isPlaying: $isPlaying, speakerModels: models, songs: songs, songsQueue: songsQueue)
+            ARViewContainer(isSpeakerConfirmed: $isSpeakerConfirmed, isSpeakerPlaced: $isSpeakerPlaced, isPlaying: $isPlaying, audioController: $audioController, speakerModels: models, songs: songs, songsQueue: songsQueue)
                 .edgesIgnoringSafeArea(.all)
                 .blur(radius: (isMusicControls ? 15 : 0))
                 
@@ -48,7 +50,7 @@ struct ContentView : View {
                     }
                     Spacer()
                     if isSpeakerSelected && !isSpeakerPlaced {
-                        PlacementButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerPlaced: $isSpeakerPlaced)
+                        PlacementButton(isSpeakerSelected: $isSpeakerSelected, isSpeakerConfirmed: $isSpeakerConfirmed, isSpeakerPlaced: $isSpeakerPlaced)
                             .padding(.bottom, 50)
                     }
                     
@@ -65,9 +67,11 @@ struct ContentView : View {
 }
 
 struct ARViewContainer: UIViewRepresentable {
+    @Binding var isSpeakerConfirmed: Bool         // used to confirm that the 'isSpeakerPlaced' portion of ARView updates was explicitly from speaker placement (not music controls update)
     @Binding var isSpeakerPlaced: Bool
     @Binding var isPlaying: Bool
     
+    @Binding var audioController: AudioPlaybackController?
     var speakerModels: Model?
     var songs: [String:Song]
     var songsQueue: (loadedSongURLs: [String], queueIndex: Int?)
@@ -91,40 +95,53 @@ struct ARViewContainer: UIViewRepresentable {
     
     func updateUIView(_ uiView: ARView, context: Context) {
         
-        if isSpeakerPlaced {
-            // Speaker setup
-            if let speaker = speakerModels?.modelEntity {
-                print("DEBUG: Placed Speaker Model")
-                let anchorEntity = AnchorEntity(plane: .any)
-                anchorEntity.addChild(speaker)
-                uiView.scene.addAnchor(anchorEntity)
-                
-                // Song setup
-                let audioController: AudioPlaybackController
-                
-                if(songsQueue.loadedSongURLs.count > 0) {
-                    if let currentIndex = songsQueue.queueIndex {
-                        print("DEBUG: Loaded song: \(songsQueue.loadedSongURLs[currentIndex])")
-                        audioController = speaker.prepareAudio(songs[songsQueue.loadedSongURLs[currentIndex]]!.songResource!)
-                        if isPlaying {
-                            print("DEBUG: Playing song...")
-                            audioController.play()
-                        } else {
-                            print("DEBUG: Pausing song...")
-                            audioController.pause()
-                        }
-                    } else {
-                        print("DEBUG: No song queued")
-                    }
+        if isSpeakerPlaced || (isPlaying || !isPlaying) {   // 'isPlaying' universally true logic ensures music controls always updates
+            print("DEBUG: isPlaying \(isPlaying)")
 
+            if isSpeakerConfirmed {
+                // Speaker init
+                if let speaker = speakerModels?.modelEntity {
+                    // Speaker setup
+                    print("DEBUG: Placed Speaker Model")
+                    let anchorEntity = AnchorEntity(plane: .any)
+                    anchorEntity.addChild(speaker)
+                    uiView.scene.addAnchor(anchorEntity)
+                
+                    // Song setup
+                    if(songsQueue.loadedSongURLs.count > 0) {
+                        if let currentIndex = songsQueue.queueIndex {
+                            print("DEBUG: Loaded song: \(songsQueue.loadedSongURLs[currentIndex])")
+                            
+                            DispatchQueue.main.async {
+                                audioController = speaker.prepareAudio(songs[songsQueue.loadedSongURLs[currentIndex]]!.songResource!)
+                            }
+                            
+                        } else {
+                            print("DEBUG: No song queued")
+                        }
+
+                    } else {
+                        print("DEBUG: No songs available")
+                    }
                 } else {
-                    print("DEBUG: No songs available")
+                    print("ERROR: Load Model Error")
                 }
-            } else {                
-                print("ERROR: Load Model Error")
             }
+            
+            print("DEBUG: audioControler is \(audioController)")
+            if audioController != nil { // If 'audioController' already initialized from confirmed speaker placement
+                if isPlaying {
+                    print("DEBUG: Playing song...")
+                    audioController!.play()
+                } else {
+                    print("DEBUG: Pausing song...")
+                    audioController!.pause()
+                }
+            }
+            
             DispatchQueue.main.async {
                 isSpeakerPlaced = false
+                isSpeakerConfirmed = false
             }
         }
     }
