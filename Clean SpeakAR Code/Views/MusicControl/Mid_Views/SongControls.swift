@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SongControls: View {
     @Binding var songsQueue: (loadedSongURLs: [String], queueIndex: Int?)    // SongControls will generally deal with 'queueIndex' part of tuple
+    @Binding var isTraversed: Bool
     @Binding var isPlaying: Bool
     
     var body: some View {
@@ -28,6 +29,8 @@ struct SongControls: View {
                         // First time queueing song, set to 0
                         songsQueue.queueIndex = 0
                     }
+                    isTraversed = true  // notify ARView song was changed
+                    isPlaying = false
                 } else {
                     songsQueue.queueIndex = nil
                     print("DEBUG: No songs to traverse")
@@ -81,6 +84,8 @@ struct SongControls: View {
                         // First time queueing song, set to 0
                         songsQueue.queueIndex = 0
                     }
+                    isTraversed = true
+                    isPlaying = false
                 } else {
                     songsQueue.queueIndex = nil
                     print("DEBUG: No songs to traverse")

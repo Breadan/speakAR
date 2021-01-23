@@ -9,7 +9,6 @@ import SwiftUI
 
 struct PlacementButton: View {
     @Binding var isSpeakerSelected: Bool
-    @Binding var isSpeakerConfirmed: Bool
     @Binding var isSpeakerPlaced: Bool
     
     var body: some View {
@@ -31,7 +30,6 @@ struct PlacementButton: View {
             Button(action: {
                 print("DEBUG: Speaker placement confirmed")
                 isSpeakerSelected = false
-                isSpeakerConfirmed = true
                 isSpeakerPlaced = true
             }) {
                 Image(systemName: "checkmark")

@@ -11,6 +11,7 @@ struct MusicControlsView: View {
     @Binding var isMusicControls: Bool
     @Binding var songs: [String:Song]
     @Binding var songsQueue: (loadedSongURLs: [String], queueIndex: Int?)
+    @Binding var isTraversed: Bool
     @Binding var isPlaying: Bool
     
     var body: some View {
@@ -37,7 +38,7 @@ struct MusicControlsView: View {
                                 .padding(.top, 10)
                                 .padding(.bottom, 10)
                             
-                            SongControls(songsQueue: $songsQueue, isPlaying: $isPlaying)
+                            SongControls(songsQueue: $songsQueue, isTraversed: $isTraversed, isPlaying: $isPlaying)
                             
                             Spacer()
 
