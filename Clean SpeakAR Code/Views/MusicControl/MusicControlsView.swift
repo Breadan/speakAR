@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import RealityKit
 
 struct MusicControlsView: View {
+    @Binding var audioController: AudioPlaybackController?
     @Binding var isMusicControls: Bool
     @Binding var songs: [String:Song]
     @Binding var songsQueue: (loadedSongURLs: [String], queueIndex: Int?)
@@ -52,7 +54,7 @@ struct MusicControlsView: View {
                   .padding(.horizontal, 25)
                 
              
-                Songlist(isMusicControls: $isMusicControls, songs: $songs, songsQueue: $songsQueue)
+                Songlist(audioController: $audioController, isMusicControls: $isMusicControls, songs: $songs, songsQueue: $songsQueue, isPlaying: $isPlaying)
                 
                 
                 .padding(.horizontal, 25)

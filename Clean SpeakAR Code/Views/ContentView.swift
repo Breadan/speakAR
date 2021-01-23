@@ -36,7 +36,7 @@ struct ContentView : View {
                 
             VStack {
                 if isMusicControls {
-                    MusicControlsView(isMusicControls: $isMusicControls, songs: $songs, songsQueue: $songsQueue, isTraversed: $isTraversed, isPlaying: $isPlaying)
+                    MusicControlsView(audioController: $audioController, isMusicControls: $isMusicControls, songs: $songs, songsQueue: $songsQueue, isTraversed: $isTraversed, isPlaying: $isPlaying)
                         //TODO: transition is only applied when loading in the MusicControlsView. I need there to be transition loading out of MusicControlsView too. Also, why is it stutter-y? transition's not smooth. is the main content view working too hard making it lag or something
                         .transition(.move(edge: .bottom))
                     

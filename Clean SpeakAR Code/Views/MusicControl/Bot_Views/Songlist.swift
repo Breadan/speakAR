@@ -6,20 +6,23 @@
 //
 
 import SwiftUI
+import RealityKit
 
 private let iconSize: CGFloat = 15
 
 struct Songlist: View {
+    @Binding var audioController: AudioPlaybackController?
     @Binding var isMusicControls: Bool
     @Binding var songs: [String:Song]
     @Binding var songsQueue: (loadedSongURLs: [String], queueIndex: Int?)
+    @Binding var isPlaying: Bool
     
     //@State var loadedSongURLs: [String] = [] // later on, maybe have the individual SonglistRows contribute to this so that the SonglistRows can real-time identify if they're loaded
     @State var selectedSongURLs: [String] = []
     
     var body: some View {
         VStack {
-            SongLoader(isMusicControls: $isMusicControls, songs: $songs, selectedSongURLs: $selectedSongURLs, songsQueue: $songsQueue)
+            SongLoader(audioController: $audioController, isMusicControls: $isMusicControls, songs: $songs, selectedSongURLs: $selectedSongURLs, songsQueue: $songsQueue, isPlaying: $isPlaying)
             
             List {
                 ForEach(Array(songs.values)) { song in

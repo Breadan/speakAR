@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import RealityKit
 
 struct SongLoader: View {
+    @Binding var audioController: AudioPlaybackController?
     @Binding var isMusicControls: Bool
     @Binding var songs: [String:Song]
     @Binding var selectedSongURLs: [String]
     @Binding var songsQueue: (loadedSongURLs: [String], queueIndex: Int?) // SongLoader will generally deal with the 'loadedSongs' part of tuple
+    @Binding var isPlaying: Bool
     
     var body: some View {
         HStack {
@@ -35,6 +38,13 @@ struct SongLoader: View {
                 songsQueue.loadedSongURLs = []                  // Emtpy song queue
                 songsQueue.queueIndex = nil                     // Set index to no queue (allowed here since we know for sure no songs loaded)
                 isMusicControls = false
+                
+                isPlaying = false
+                if audioController != nil {
+                    print("DEBUG: Unloaded, force stopping audio")
+                    audioController!.stop()
+                }
+                
             }) {
                 Image(systemName: "rectangle.stack.badge.minus")
                     .font(.system(size: 20))
@@ -63,6 +73,12 @@ struct SongLoader: View {
                 songsQueue.loadedSongURLs = songsQueue.loadedSongURLs.filter { !selectedSongURLs.contains($0) }    // Filter (keep) only songs that selectedSongURLs does not contain
                 songsQueue.queueIndex = nil
                 isMusicControls = false
+                
+                if audioController != nil {
+                    print("DEBUG: Unloaded, force stopping audio")
+                    audioController!.stop()
+                }
+                
             }) {
                 Image(systemName: "minus.circle")
                     .font(.system(size: 20))

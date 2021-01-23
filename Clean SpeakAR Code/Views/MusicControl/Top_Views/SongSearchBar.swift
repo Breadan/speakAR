@@ -5,19 +5,6 @@
 //  Created by Daniel Jung on 1/18/21.
 //
 
-//import SwiftUI
-//
-//struct SongSearchBar: View {
-//    var body: some View {
-//        Button(action: {
-//            print("DEBUG: search bar selected")
-//        }) {
-//            Text("Song Search Bar")
-//        }
-//    }
-//}
-
-
 import SwiftUI
  
 struct SongSearchBar: View {
@@ -28,7 +15,7 @@ struct SongSearchBar: View {
     var body: some View {
         HStack {
  
-            TextField("Search ...", text: $text)
+            TextField("nahhh not gonna even try", text: $text)
                 .padding(7)
                 .padding(.horizontal, 25)
                 .background(Color(.systemGray6))
@@ -49,7 +36,7 @@ struct SongSearchBar: View {
                                     .padding(.trailing, 8)
                                     .onTapGesture {
                                         self.text = ""
-                                        print("DEBUG: cancelling search")
+                                        print("DEBUG: Cancelling search")
                                     }
                             }
                         }
@@ -58,7 +45,7 @@ struct SongSearchBar: View {
 //                .padding(.horizontal, 10)
                 .onTapGesture {
                     self.isEditing = true
-                    print("DEBUG: searching songs")
+                    print("DEBUG: Searching songs")
                 }
 // 
 //            if isEditing {
