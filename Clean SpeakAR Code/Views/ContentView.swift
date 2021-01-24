@@ -10,17 +10,11 @@ import RealityKit
 import ARKit
 import Combine
 
-enum loadStrat: UInt {
-    case onAppLaunch
-    case realTime
-}
-
 struct ContentView : View {
+    // These private instance variables all initialize once on app launch
     @State private var isSpeakerSelected = false
     @State private var isSpeakerPlaced = false
     @State private var isMusicControls = false
-    
-    private static var resourceLoadStrat = loadStrat.onAppLaunch
     
     // Setting our stored property to the closure's returned value, NOT the actual closure itself (i.e., we called the closure using the '()' function notation to RETURN value)
     private var models: Model? = { () -> Model in
@@ -28,50 +22,24 @@ struct ContentView : View {
         return model
     }()
     
-    @State private var songs: [String:Song?] = { () -> [String:Song?] in
-        let FM = FileManager.default
-        var songs = Dictionary<String,Song?>()
-        if let resourcesPath = try? FM.contentsOfDirectory(atPath: Bundle.main.bundlePath) {
-            for resourceURL in resourcesPath where resourceURL.hasSuffix("mp3") {
-                print("DEBUG: Found song resource \(resourceURL)")
-                songs[resourceURL] = nil as Song?   // Need to explicitly SET TO 'nil', 'nil' usually inferred as "to remove entry"
-            }
-            /* This loads resources in loading-screen. We can move loading requests to when the user places the speaker or confirm selects song for speaker. */
-            if(resourceLoadStrat == loadStrat.onAppLaunch) {
-                // Use a closure to efficiently operate on each String from 'songURLs' to append to 'songs'
-                Array(songs.keys).forEach { (songURL: String) -> Void in
-                    // Ensure specified song URL has a .extension by optionally bindng String.Index?
-                    if let extIndex: String.Index = songURL.firstIndex(of:".") {
-                        songs[songURL] =
-                            // Pairing 'songURL' key with 'Song' value
-                            Song(songName: String(songURL[..<extIndex]),
-                                 fileExt: String(songURL[extIndex..<songURL.endIndex]))
-                    } else {
-                        print("ERROR: Invalid song URL!")
-                    }
-                }
-                print("DEBUG: Requested a total of \(songs.count) song resources")
-            }
-            else if(resourceLoadStrat == loadStrat.realTime) {
-                print("DEBUG: Skipping song pre-requests... using real-time loader")
-            }
-            
-        } else {
-            print("DEBUG: No .mp3 song files found")
-            return [:]
-        }
-        return songs
-    }()
+    @State private var audioController: AudioPlaybackController? = nil
+    @State private var songs: [String:Song] = loadSongList()
+    @State private var songsQueue: (loadedSongURLs: [String], queueIndex: Int?) = ([], nil)
+    @State private var isTraversed: Bool = false
+    @State private var isPlaying: Bool = false
     
     var body: some View {
         ZStack(alignment: .bottom) {
-            ARViewContainer(isSpeakerPlaced: $isSpeakerPlaced, resourceLoadStrat: ContentView.resourceLoadStrat, speakerModels: models, speakerSongs: $songs)
+            ARViewContainer(isSpeakerPlaced: $isSpeakerPlaced, isTraversed: $isTraversed, isPlaying: $isPlaying, audioController: $audioController, speakerModels: models, songs: songs, songsQueue: songsQueue)
                 .edgesIgnoringSafeArea(.all)
+                .blur(radius: (isMusicControls ? 15 : 0))
+                
             VStack {
                 if isMusicControls {
-                    MusicControlsView(isMusicControls: $isMusicControls)
+                    MusicControlsView(audioController: $audioController, isMusicControls: $isMusicControls, songs: $songs, songsQueue: $songsQueue, isTraversed: $isTraversed, isPlaying: $isPlaying)
                         //TODO: transition is only applied when loading in the MusicControlsView. I need there to be transition loading out of MusicControlsView too. Also, why is it stutter-y? transition's not smooth. is the main content view working too hard making it lag or something
                         .transition(.move(edge: .bottom))
+                    
                 }
                 else {
                     HStack {
@@ -100,10 +68,15 @@ struct ContentView : View {
 
 struct ARViewContainer: UIViewRepresentable {
     @Binding var isSpeakerPlaced: Bool
+    @Binding var isTraversed: Bool
+    @Binding var isPlaying: Bool
     
-    var resourceLoadStrat: loadStrat
+    @Binding var audioController: AudioPlaybackController?
     var speakerModels: Model?
-    @Binding var speakerSongs: [String:Song?]
+    var songs: [String:Song]
+    var songsQueue: (loadedSongURLs: [String], queueIndex: Int?)
+    
+
     
     func makeUIView(context: Context) -> ARView {
         let arView = ARView(frame: .zero)
@@ -121,65 +94,60 @@ struct ARViewContainer: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: ARView, context: Context) {
-        if isSpeakerPlaced {
-            // Speaker setup
+        
+        if isSpeakerPlaced || isTraversed {
+            // Speaker init
             if let speaker = speakerModels?.modelEntity {
-                print("DEBUG: Placed Speaker Model")
-                let anchorEntity = AnchorEntity(plane: .any)
-                anchorEntity.addChild(speaker)
-                uiView.scene.addAnchor(anchorEntity)
-                
+                // Speaker setup
+                if isSpeakerPlaced {            // only place new speaker if explicitly built
+                    print("DEBUG: Placed Speaker Model")
+                    let anchorEntity = AnchorEntity(plane: .any)
+                    anchorEntity.addChild(speaker)
+                    uiView.scene.addAnchor(anchorEntity)
+                }
+            
                 // Song setup
-                let audioController: AudioPlaybackController
-                if(speakerSongs.count > 0) {
-                    let randSongIndex = Int.random(in: 0..<speakerSongs.count)
-                    
-                    // Pre-requested song loader
-                    if(resourceLoadStrat == loadStrat.onAppLaunch) {
-                        if let songResource = Array(speakerSongs.values)[randSongIndex]?.songResource {
-                            print("DEBUG: Playing Speaker Song: \(Array(speakerSongs.values)[randSongIndex]!.songName)")
-                            audioController = speaker.prepareAudio(songResource)
-                            audioController.play()
-                        } else {
-                            print("ERROR: Load Song Error")
-                        }
-                    }
-                    // Real-time load song loader
-                    else if(resourceLoadStrat == loadStrat.realTime) {
-                        let songURL = Array(speakerSongs.keys)[randSongIndex]
-                        // Init/cache song if not already in dictionary
-                        if speakerSongs[songURL]! == nil {
-                            print("DEBUG: \(songURL) not cached, caching...")
-                            let extIndex = songURL.firstIndex(of:".")!
-                            DispatchQueue.main.async {
-                                speakerSongs[songURL] = Song(songName: String(songURL[..<extIndex]),
-                                                   fileExt: String(songURL[extIndex..<songURL.endIndex]))
+                if(songsQueue.loadedSongURLs.count > 0) {
+                    if let currentIndex = songsQueue.queueIndex {
+                        print("DEBUG: Loaded song: \(songsQueue.loadedSongURLs[currentIndex])")
+                        DispatchQueue.main.async {
+                            if audioController != nil {
+                                audioController!.stop()
                             }
+                            audioController = speaker.prepareAudio(songs[songsQueue.loadedSongURLs[currentIndex]]!.songResource!)
                         }
-                        // Load song from dictionary and play
-                        if let song = speakerSongs[songURL]! {
-                            if let songResource = song.songResource {
-                                print("DEBUG: Playing Speaker Song: \(Array(speakerSongs.values)[randSongIndex]!.songName)")
-                                audioController = speaker.prepareAudio(songResource)
-                                audioController.play()
-                            } else {
-                                print("ERROR: Load songResource Error")
-                            }
-                        } else {
-                            print("ERROR: Load Song Error - is async request completed?")
-                        }
+                    } else {
+                        print("DEBUG: No song queued")
                     }
-                    
+
                 } else {
                     print("DEBUG: No songs available")
                 }
-            } else {                
+                
+            } else {
                 print("ERROR: Load Model Error")
             }
+            
             DispatchQueue.main.async {
                 isSpeakerPlaced = false
+                isTraversed = false
             }
         }
+        
+        
+        if isPlaying || !isPlaying {    // Universally true logic ensures any song control play/pause updates
+            if audioController != nil { // If 'audioController' already initialized from confirmed speaker placement
+                if isPlaying {
+                    print("DEBUG: Playing song...")
+                    audioController!.play()
+                } else {
+                    print("DEBUG: Pausing song...")
+                    audioController!.pause()
+                }
+            }
+        }
+        
+        
     }
 }
 

@@ -10,41 +10,50 @@ import UIKit
 import RealityKit
 import Combine
 
-class Song {
-    var isLoaded: Bool = false
-    var songName: String
+class Song: Identifiable, Equatable {
+    let id = UUID()
+    static func == (lhs: Song, rhs: Song) -> Bool {
+        lhs.songURL == rhs.songURL || lhs.songName == rhs.songName
+    }
+    
+    let songURL: String
+    let songName: String      // this is without the file extension
+    //let songArtist: String
+    //let songGenre: String
+    var songDuration: Double {
+        // placeholder
+        return 120.0
+    }
+    
     var songResource: AudioFileResource?
+
     
-    private var cancellable: AnyCancellable?
+    init(URL: String) {
+        self.songURL = URL
+        self.songName = String(URL[...URL.firstIndex(of: ".")!])
+    }
     
-    init(songName: String, fileExt: String) {
-        self.songName = songName
-        let fileName = songName + fileExt
+    func requestSong(songURL: String) -> () {
+        var isLoaded: Bool = false
         
-        self.cancellable = AudioFileResource.loadAsync(named: fileName,
+        var cancellable: AnyCancellable?
+        cancellable = AudioFileResource.loadAsync(named: songURL,
                                                        in: nil,
                                                        inputMode: .spatial,
                                                        loadingStrategy: .preload,
                                                        shouldLoop: true)
             .sink() { completionError in
-                if(!self.isLoaded) {
+                if(!isLoaded) {
                     print("ERROR: \(completionError) non-value received on request completion")
                 } else {
                     print("DEBUG: Request completed, closing stream...")
                 }
-                self.cancellable?.cancel()
+                cancellable?.cancel()
                 
             } receiveValue: { value in
                 print("SUCCESS: \(value) value received on request completion")
-                self.isLoaded = true
+                isLoaded = true
                 self.songResource = value
             }
     }
 }
-
-//let audioResource = try AudioFileResource.load(named: "Stan Forebee & Kyle McEvoy - Sunrise On Southey Street.mp3",
-//                                       in: nil,
-//                                       inputMode: .spatial,
-//                                       loadingStrategy: .preload,
-//                                       shouldLoop: true)
-

@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct ProgressBar: View {
+    var songsQueue: (loadedSongURLs: [String], queueIndex: Int?)
+    
     var body: some View {
+        
+        // Hmm... how tf am I going to get the song duration??
         
         ZStack(alignment: .leading) {
            Rectangle()

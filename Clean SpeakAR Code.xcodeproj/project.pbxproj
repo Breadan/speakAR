@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4080D9CB25B9EDB400E7E780 /* SongInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080D9CA25B9EDB400E7E780 /* SongInit.swift */; };
+		4080D9DE25BA60E900E7E780 /* SongLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4080D9DD25BA60E900E7E780 /* SongLoader.swift */; };
 		40AA309F25B56543006BD006 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AA309D25B56543006BD006 /* Song.swift */; };
 		40AA30CF25B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C325B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 */; };
-		40AA30D025B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C425B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 */; };
-		40AA30D125B5FC6C006BD006 /* Toby Tranter - High Noon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C525B5FC6C006BD006 /* Toby Tranter - High Noon.mp3 */; };
-		40AA30D225B5FC6C006BD006 /* Rayons - From Paradise Past.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C625B5FC6C006BD006 /* Rayons - From Paradise Past.mp3 */; };
-		40AA30D325B5FC6C006BD006 /* Evolve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C725B5FC6C006BD006 /* Evolve.mp3 */; };
-		40AA30D425B5FC6C006BD006 /* Silk (Favored Nations Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C825B5FC6C006BD006 /* Silk (Favored Nations Remix).mp3 */; };
+		40AA30D325B5FC6C006BD006 /* IHF - Evolve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C725B5FC6C006BD006 /* IHF - Evolve.mp3 */; };
+		40AA30D425B5FC6C006BD006 /* Giselle - Silk (Favored Nations Remix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C825B5FC6C006BD006 /* Giselle - Silk (Favored Nations Remix).mp3 */; };
 		40AA30D525B5FC6C006BD006 /* Uppermost - Beautiful Light.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30C925B5FC6C006BD006 /* Uppermost - Beautiful Light.mp3 */; };
-		40AA30D625B5FC6C006BD006 /* Hisaishi - Howl's Moving Castle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30CA25B5FC6C006BD006 /* Hisaishi - Howl's Moving Castle.mp3 */; };
-		40AA30D725B5FC6C006BD006 /* Amsterdam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30CB25B5FC6C006BD006 /* Amsterdam.mp3 */; };
-		40AA30D825B5FC6C006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30CC25B5FC6C006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 */; };
-		40AA30D925B5FC6C006BD006 /* Post Malone - Circles (Instrumental).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30CD25B5FC6C006BD006 /* Post Malone - Circles (Instrumental).mp3 */; };
-		40AA30DA25B5FC6C006BD006 /* sagun - rains.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30CE25B5FC6C006BD006 /* sagun - rains.mp3 */; };
+		40AA30D725B5FC6C006BD006 /* LatelyLui - Amsterdam.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40AA30CB25B5FC6C006BD006 /* LatelyLui - Amsterdam.mp3 */; };
+		40E2212E25BB2D9E007857CF /* Songlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E2212D25BB2D9E007857CF /* Songlist.swift */; };
+		40E2215725BB809D007857CF /* Toby Tranter - High Noon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40E2215025BB809D007857CF /* Toby Tranter - High Noon.mp3 */; };
+		40E2215825BB809D007857CF /* SF & KMcE - Sunrise On Southey Street.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40E2215125BB809D007857CF /* SF & KMcE - Sunrise On Southey Street.mp3 */; };
+		40E2215925BB809D007857CF /* sagun - rains.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40E2215225BB809D007857CF /* sagun - rains.mp3 */; };
+		40E2215A25BB809D007857CF /* Rayons - From Paradise Past.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40E2215325BB809D007857CF /* Rayons - From Paradise Past.mp3 */; };
+		40E2215B25BB809D007857CF /* RŮDE - 22 Samurai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40E2215425BB809D007857CF /* RŮDE - 22 Samurai.mp3 */; };
+		40E2215C25BB809D007857CF /* Hisaishi - Howl's Moving Castle.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40E2215525BB809D007857CF /* Hisaishi - Howl's Moving Castle.mp3 */; };
+		40E2215D25BB809D007857CF /* Post Malone - Circles (Instrumental).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 40E2215625BB809D007857CF /* Post Malone - Circles (Instrumental).mp3 */; };
 		4A0B848925B432AC00B81587 /* MusicControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B848825B432AC00B81587 /* MusicControlsView.swift */; };
 		4A0B848C25B432D100B81587 /* MusicControlsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B848B25B432D100B81587 /* MusicControlsButton.swift */; };
 		4A48B1C325B67E970044AFB0 /* SongTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1C225B67E970044AFB0 /* SongTitle.swift */; };
 		4A48B1C625B67EBA0044AFB0 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1C525B67EBA0044AFB0 /* ProgressBar.swift */; };
-		4A48B1C925B67F230044AFB0 /* SongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1C825B67F230044AFB0 /* SongController.swift */; };
+		4A48B1C925B67F230044AFB0 /* SongControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1C825B67F230044AFB0 /* SongControls.swift */; };
 		4A48B1CC25B680940044AFB0 /* Lyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1CB25B680940044AFB0 /* Lyrics.swift */; };
 		4A48B1CF25B680C50044AFB0 /* ExpandLyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1CE25B680C50044AFB0 /* ExpandLyrics.swift */; };
-		4A48B1D225B680DA0044AFB0 /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A48B1D125B680DA0044AFB0 /* SongList.swift */; };
 		4A51265625B2B5D00047B67D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A51265525B2B5D00047B67D /* AppDelegate.swift */; };
 		4A51265825B2B5D00047B67D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A51265725B2B5D00047B67D /* ContentView.swift */; };
 		4A51265C25B2B5D20047B67D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A51265B25B2B5D20047B67D /* Assets.xcassets */; };
@@ -43,27 +45,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4080D9CA25B9EDB400E7E780 /* SongInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInit.swift; sourceTree = "<group>"; };
+		4080D9DD25BA60E900E7E780 /* SongLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongLoader.swift; sourceTree = "<group>"; };
 		40AA309D25B56543006BD006 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		40AA30C325B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Kupla - Friendly Creatures.mp3"; sourceTree = "<group>"; };
-		40AA30C425B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SF & KMcE - Sunrise On Southey Street.mp3"; sourceTree = "<group>"; };
-		40AA30C525B5FC6C006BD006 /* Toby Tranter - High Noon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Toby Tranter - High Noon.mp3"; sourceTree = "<group>"; };
-		40AA30C625B5FC6C006BD006 /* Rayons - From Paradise Past.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rayons - From Paradise Past.mp3"; sourceTree = "<group>"; };
-		40AA30C725B5FC6C006BD006 /* Evolve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Evolve.mp3; sourceTree = "<group>"; };
-		40AA30C825B5FC6C006BD006 /* Silk (Favored Nations Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Silk (Favored Nations Remix).mp3"; sourceTree = "<group>"; };
+		40AA30C725B5FC6C006BD006 /* IHF - Evolve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "IHF - Evolve.mp3"; sourceTree = "<group>"; };
+		40AA30C825B5FC6C006BD006 /* Giselle - Silk (Favored Nations Remix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Giselle - Silk (Favored Nations Remix).mp3"; sourceTree = "<group>"; };
 		40AA30C925B5FC6C006BD006 /* Uppermost - Beautiful Light.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Uppermost - Beautiful Light.mp3"; sourceTree = "<group>"; };
-		40AA30CA25B5FC6C006BD006 /* Hisaishi - Howl's Moving Castle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hisaishi - Howl's Moving Castle.mp3"; sourceTree = "<group>"; };
-		40AA30CB25B5FC6C006BD006 /* Amsterdam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Amsterdam.mp3; sourceTree = "<group>"; };
-		40AA30CC25B5FC6C006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "[ City Your City & Frasco ] Micro Summer.mp3"; sourceTree = "<group>"; };
-		40AA30CD25B5FC6C006BD006 /* Post Malone - Circles (Instrumental).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Post Malone - Circles (Instrumental).mp3"; sourceTree = "<group>"; };
-		40AA30CE25B5FC6C006BD006 /* sagun - rains.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sagun - rains.mp3"; sourceTree = "<group>"; };
+		40AA30CB25B5FC6C006BD006 /* LatelyLui - Amsterdam.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "LatelyLui - Amsterdam.mp3"; sourceTree = "<group>"; };
+		40E2212D25BB2D9E007857CF /* Songlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Songlist.swift; sourceTree = "<group>"; };
+		40E2215025BB809D007857CF /* Toby Tranter - High Noon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Toby Tranter - High Noon.mp3"; sourceTree = "<group>"; };
+		40E2215125BB809D007857CF /* SF & KMcE - Sunrise On Southey Street.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "SF & KMcE - Sunrise On Southey Street.mp3"; sourceTree = "<group>"; };
+		40E2215225BB809D007857CF /* sagun - rains.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sagun - rains.mp3"; sourceTree = "<group>"; };
+		40E2215325BB809D007857CF /* Rayons - From Paradise Past.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rayons - From Paradise Past.mp3"; sourceTree = "<group>"; };
+		40E2215425BB809D007857CF /* RŮDE - 22 Samurai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "RŮDE - 22 Samurai.mp3"; sourceTree = "<group>"; };
+		40E2215525BB809D007857CF /* Hisaishi - Howl's Moving Castle.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Hisaishi - Howl's Moving Castle.mp3"; sourceTree = "<group>"; };
+		40E2215625BB809D007857CF /* Post Malone - Circles (Instrumental).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Post Malone - Circles (Instrumental).mp3"; sourceTree = "<group>"; };
 		4A0B848825B432AC00B81587 /* MusicControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlsView.swift; sourceTree = "<group>"; };
 		4A0B848B25B432D100B81587 /* MusicControlsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicControlsButton.swift; sourceTree = "<group>"; };
 		4A48B1C225B67E970044AFB0 /* SongTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTitle.swift; sourceTree = "<group>"; };
 		4A48B1C525B67EBA0044AFB0 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
-		4A48B1C825B67F230044AFB0 /* SongController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongController.swift; sourceTree = "<group>"; };
+		4A48B1C825B67F230044AFB0 /* SongControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongControls.swift; sourceTree = "<group>"; };
 		4A48B1CB25B680940044AFB0 /* Lyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lyrics.swift; sourceTree = "<group>"; };
 		4A48B1CE25B680C50044AFB0 /* ExpandLyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandLyrics.swift; sourceTree = "<group>"; };
-		4A48B1D125B680DA0044AFB0 /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
 		4A51265225B2B5D00047B67D /* Clean SpeakAR Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clean SpeakAR Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A51265525B2B5D00047B67D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A51265725B2B5D00047B67D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,20 +95,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4063284925B9EB25009310D2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				40AA309D25B56543006BD006 /* Song.swift */,
+				4A58B19525B692AF00202468 /* Model.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4080D9D425BA4A5F00E7E780 /* Top_Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A0B848B25B432D100B81587 /* MusicControlsButton.swift */,
+				4A6994A325B67BDE00F5F32D /* SongSearchBar.swift */,
+			);
+			path = Top_Views;
+			sourceTree = "<group>";
+		};
+		4080D9D525BA4A7900E7E780 /* Mid_Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A5FA59825B68E7600041B22 /* CurrentSongThumbnail.swift */,
+				4A48B1C225B67E970044AFB0 /* SongTitle.swift */,
+				4A48B1C525B67EBA0044AFB0 /* ProgressBar.swift */,
+				4A48B1C825B67F230044AFB0 /* SongControls.swift */,
+			);
+			path = Mid_Views;
+			sourceTree = "<group>";
+		};
+		4080D9D825BA4AB300E7E780 /* Bot_Views */ = {
+			isa = PBXGroup;
+			children = (
+				40E2212D25BB2D9E007857CF /* Songlist.swift */,
+				4080D9DD25BA60E900E7E780 /* SongLoader.swift */,
+				4A48B1CB25B680940044AFB0 /* Lyrics.swift */,
+				4A48B1CE25B680C50044AFB0 /* ExpandLyrics.swift */,
+			);
+			path = Bot_Views;
+			sourceTree = "<group>";
+		};
+		4080D9D925BA4E7500E7E780 /* Mid_Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mid_Models;
+			sourceTree = "<group>";
+		};
 		40AA30A225B5654F006BD006 /* Songs */ = {
 			isa = PBXGroup;
 			children = (
-				40AA30CC25B5FC6C006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 */,
-				40AA30CB25B5FC6C006BD006 /* Amsterdam.mp3 */,
-				40AA30C725B5FC6C006BD006 /* Evolve.mp3 */,
-				40AA30CA25B5FC6C006BD006 /* Hisaishi - Howl's Moving Castle.mp3 */,
+				40E2215525BB809D007857CF /* Hisaishi - Howl's Moving Castle.mp3 */,
+				40E2215625BB809D007857CF /* Post Malone - Circles (Instrumental).mp3 */,
+				40E2215325BB809D007857CF /* Rayons - From Paradise Past.mp3 */,
+				40E2215425BB809D007857CF /* RŮDE - 22 Samurai.mp3 */,
+				40E2215225BB809D007857CF /* sagun - rains.mp3 */,
+				40E2215125BB809D007857CF /* SF & KMcE - Sunrise On Southey Street.mp3 */,
+				40E2215025BB809D007857CF /* Toby Tranter - High Noon.mp3 */,
+				40AA30CB25B5FC6C006BD006 /* LatelyLui - Amsterdam.mp3 */,
+				40AA30C725B5FC6C006BD006 /* IHF - Evolve.mp3 */,
 				40AA30C325B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 */,
-				40AA30CD25B5FC6C006BD006 /* Post Malone - Circles (Instrumental).mp3 */,
-				40AA30C625B5FC6C006BD006 /* Rayons - From Paradise Past.mp3 */,
-				40AA30CE25B5FC6C006BD006 /* sagun - rains.mp3 */,
-				40AA30C425B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 */,
-				40AA30C825B5FC6C006BD006 /* Silk (Favored Nations Remix).mp3 */,
-				40AA30C525B5FC6C006BD006 /* Toby Tranter - High Noon.mp3 */,
+				40AA30C825B5FC6C006BD006 /* Giselle - Silk (Favored Nations Remix).mp3 */,
 				40AA30C925B5FC6C006BD006 /* Uppermost - Beautiful Light.mp3 */,
 			);
 			path = Songs;
@@ -131,10 +182,10 @@
 			children = (
 				4A51265525B2B5D00047B67D /* AppDelegate.swift */,
 				4A6994A025B67AEF00F5F32D /* Views */,
-				4A69949E25B67AB900F5F32D /* Helpers */,
+				4A69949E25B67AB900F5F32D /* Models */,
 				4A51265B25B2B5D20047B67D /* Assets.xcassets */,
 				4A51266025B2B5D30047B67D /* Info.plist */,
-				4A6D6FFF25B2BA1B000EA2FC /* Models */,
+				4A6D6FFF25B2BA1B000EA2FC /* AR Objects */,
 				40AA30A225B5654F006BD006 /* Songs */,
 				4A51265D25B2B5D20047B67D /* Preview Content */,
 			);
@@ -149,21 +200,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		4A69949E25B67AB900F5F32D /* Helpers */ = {
+		4A69949E25B67AB900F5F32D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4A69949F25B67AC500F5F32D /* ResourceLoaders */,
+				4080D9D925BA4E7500E7E780 /* Mid_Models */,
+				4063284925B9EB25009310D2 /* Data */,
+				4A69949F25B67AC500F5F32D /* Initializers */,
 			);
-			path = Helpers;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		4A69949F25B67AC500F5F32D /* ResourceLoaders */ = {
+		4A69949F25B67AC500F5F32D /* Initializers */ = {
 			isa = PBXGroup;
 			children = (
-				40AA309D25B56543006BD006 /* Song.swift */,
-				4A58B19525B692AF00202468 /* Model.swift */,
+				4080D9CA25B9EDB400E7E780 /* SongInit.swift */,
 			);
-			path = ResourceLoaders;
+			path = Initializers;
 			sourceTree = "<group>";
 		};
 		4A6994A025B67AEF00F5F32D /* Views */ = {
@@ -180,15 +232,9 @@
 			isa = PBXGroup;
 			children = (
 				4A0B848825B432AC00B81587 /* MusicControlsView.swift */,
-				4A6994A325B67BDE00F5F32D /* SongSearchBar.swift */,
-				4A0B848B25B432D100B81587 /* MusicControlsButton.swift */,
-				4A5FA59825B68E7600041B22 /* CurrentSongThumbnail.swift */,
-				4A48B1C225B67E970044AFB0 /* SongTitle.swift */,
-				4A48B1C525B67EBA0044AFB0 /* ProgressBar.swift */,
-				4A48B1C825B67F230044AFB0 /* SongController.swift */,
-				4A48B1CB25B680940044AFB0 /* Lyrics.swift */,
-				4A48B1CE25B680C50044AFB0 /* ExpandLyrics.swift */,
-				4A48B1D125B680DA0044AFB0 /* SongList.swift */,
+				4080D9D425BA4A5F00E7E780 /* Top_Views */,
+				4080D9D525BA4A7900E7E780 /* Mid_Views */,
+				4080D9D825BA4AB300E7E780 /* Bot_Views */,
 			);
 			path = MusicControl;
 			sourceTree = "<group>";
@@ -202,14 +248,14 @@
 			path = ModelControl;
 			sourceTree = "<group>";
 		};
-		4A6D6FFF25B2BA1B000EA2FC /* Models */ = {
+		4A6D6FFF25B2BA1B000EA2FC /* AR Objects */ = {
 			isa = PBXGroup;
 			children = (
 				4ABF11CE25B66AB100550AE9 /* Speaker.usdz */,
 				4A6D700D25B30F99000EA2FC /* Apple.usdc */,
 				4A6D700025B2BA36000EA2FC /* Apple Homepod.usd */,
 			);
-			path = Models;
+			path = "AR Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,23 +315,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E2215C25BB809D007857CF /* Hisaishi - Howl's Moving Castle.mp3 in Resources */,
 				4A51265F25B2B5D20047B67D /* Preview Assets.xcassets in Resources */,
-				40AA30D925B5FC6C006BD006 /* Post Malone - Circles (Instrumental).mp3 in Resources */,
+				40E2215A25BB809D007857CF /* Rayons - From Paradise Past.mp3 in Resources */,
 				4ABF11CF25B66AB100550AE9 /* Speaker.usdz in Resources */,
-				40AA30D625B5FC6C006BD006 /* Hisaishi - Howl's Moving Castle.mp3 in Resources */,
 				4A6D700E25B30F9A000EA2FC /* Apple.usdc in Resources */,
+				40E2215725BB809D007857CF /* Toby Tranter - High Noon.mp3 in Resources */,
+				40E2215B25BB809D007857CF /* RŮDE - 22 Samurai.mp3 in Resources */,
 				4A6D700125B2BA36000EA2FC /* Apple Homepod.usd in Resources */,
-				40AA30D325B5FC6C006BD006 /* Evolve.mp3 in Resources */,
-				40AA30DA25B5FC6C006BD006 /* sagun - rains.mp3 in Resources */,
-				40AA30D225B5FC6C006BD006 /* Rayons - From Paradise Past.mp3 in Resources */,
-				40AA30D025B5FC6C006BD006 /* SF & KMcE - Sunrise On Southey Street.mp3 in Resources */,
+				40AA30D325B5FC6C006BD006 /* IHF - Evolve.mp3 in Resources */,
 				40AA30D525B5FC6C006BD006 /* Uppermost - Beautiful Light.mp3 in Resources */,
-				40AA30D825B5FC6C006BD006 /* [ City Your City & Frasco ] Micro Summer.mp3 in Resources */,
 				4A51265C25B2B5D20047B67D /* Assets.xcassets in Resources */,
-				40AA30D425B5FC6C006BD006 /* Silk (Favored Nations Remix).mp3 in Resources */,
+				40AA30D425B5FC6C006BD006 /* Giselle - Silk (Favored Nations Remix).mp3 in Resources */,
+				40E2215925BB809D007857CF /* sagun - rains.mp3 in Resources */,
+				40E2215825BB809D007857CF /* SF & KMcE - Sunrise On Southey Street.mp3 in Resources */,
 				40AA30CF25B5FC6C006BD006 /* Kupla - Friendly Creatures.mp3 in Resources */,
-				40AA30D125B5FC6C006BD006 /* Toby Tranter - High Noon.mp3 in Resources */,
-				40AA30D725B5FC6C006BD006 /* Amsterdam.mp3 in Resources */,
+				40AA30D725B5FC6C006BD006 /* LatelyLui - Amsterdam.mp3 in Resources */,
+				40E2215D25BB809D007857CF /* Post Malone - Circles (Instrumental).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +345,7 @@
 				4A51265825B2B5D00047B67D /* ContentView.swift in Sources */,
 				4A6994A425B67BDE00F5F32D /* SongSearchBar.swift in Sources */,
 				4A6D700825B302AD000EA2FC /* PlacementButton.swift in Sources */,
+				4080D9DE25BA60E900E7E780 /* SongLoader.swift in Sources */,
 				4A5FA59925B68E7600041B22 /* CurrentSongThumbnail.swift in Sources */,
 				4A48B1C325B67E970044AFB0 /* SongTitle.swift in Sources */,
 				4A0B848925B432AC00B81587 /* MusicControlsView.swift in Sources */,
@@ -309,9 +356,10 @@
 				4A51265625B2B5D00047B67D /* AppDelegate.swift in Sources */,
 				4A48B1CC25B680940044AFB0 /* Lyrics.swift in Sources */,
 				4A6D700425B2F14B000EA2FC /* SpeakerButton.swift in Sources */,
-				4A48B1D225B680DA0044AFB0 /* SongList.swift in Sources */,
+				40E2212E25BB2D9E007857CF /* Songlist.swift in Sources */,
+				4080D9CB25B9EDB400E7E780 /* SongInit.swift in Sources */,
 				4A48B1C625B67EBA0044AFB0 /* ProgressBar.swift in Sources */,
-				4A48B1C925B67F230044AFB0 /* SongController.swift in Sources */,
+				4A48B1C925B67F230044AFB0 /* SongControls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,14 +489,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Clean SpeakAR Code/Preview Content\"";
-				DEVELOPMENT_TEAM = WZ5RYR2QMJ;
+				DEVELOPMENT_TEAM = Z27TRPT2NF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Clean SpeakAR Code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dan.Clean-SpeakAR-Code";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dann.Clean-SpeakAR-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,14 +510,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Clean SpeakAR Code/Preview Content\"";
-				DEVELOPMENT_TEAM = WZ5RYR2QMJ;
+				DEVELOPMENT_TEAM = Z27TRPT2NF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Clean SpeakAR Code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dan.Clean-SpeakAR-Code";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bread-and-Dann.Clean-SpeakAR-Code";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

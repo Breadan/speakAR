@@ -21,8 +21,8 @@ struct MusicControlsButton: View {
                     }
                     print("DEBUG: MusicControlsButton toggled")
                 }) {
-                    Image(systemName: "music.note.house")
-                        .font(.system(size: 50))
+                    Image(systemName: "hifispeaker.fill")
+                        .font(.system(size: 30))
                         .foregroundColor(.white)
                         .buttonStyle(PlainButtonStyle())
                 }
