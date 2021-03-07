@@ -1,9 +1,7 @@
 Welcome!
 
-This is the official repository for the SpeakAR iOS app development, currently private... so you shouldn't be seeing this unless you're either:
+This is a repository for the SpeakAR iOS app development, currently open...
 
 Contributors: <br />
     - DannyJay2001 <br />
     - Breadn
-
-        ~Bread&Dan Creations
